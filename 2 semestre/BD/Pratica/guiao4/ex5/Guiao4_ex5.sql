@@ -1,0 +1,44 @@
+CREATE SCHEMA CONFERENCIAS;
+GO
+
+CREATE TABLE CONFERENCIAS.artigo(
+	no_registo	INT PRIMARY KEY CHECK(no_registo > 0) NOT NULL,
+	titulo		VARCHAR(250) UNIQUE NOT NULL
+);
+GO
+
+CREATE TABLE CONFERENCIAS.instituicao(
+	nome	 VARCHAR(250) PRIMARY KEY NOT NULL,
+	endereco VARCHAR(1024) NOT NULL
+);
+GO
+
+CREATE TABLE CONFERENCIAS.pessoa(
+	email		VARCHAR(250) PRIMARY KEY NOT NULL,
+	instituicao VARCHAR(250) REFERENCES CONFERENCIAS.instituicao(nome) NOT NULL,
+	nome		VARCHAR(250) NOT NULL
+);
+GO
+
+CREATE TABLE CONFERENCIAS.participante_Estudante(
+	email				VARCHAR(250) REFERENCES CONFERENCIAS.pessoa(email) NOT NULL,
+	data_inscricao		DATE NOT NULL,
+	morada				VARCHAR(1024) NOT NULL,
+	local_comprovativo  VARCHAR(1024) NOT NULL
+);
+GO
+
+CREATE TABLE CONFERENCIAS.participante_naoEstudante(
+	email				VARCHAR(250) REFERENCES CONFERENCIAS.pessoa(email) NOT NULL,
+	data_inscricao		DATE NOT NULL,
+	morada				VARCHAR(1024) NOT NULL,
+	refecencia_bancaria VARCHAR(1024) NOT NULL
+);
+GO
+
+CREATE TABLE CONFERENCIAS.autor(
+	registo_antigo  INT REFERENCES CONFERENCIAS.artigo(no_registo) NOT NULL,
+	email_autor		VARCHAR(250) REFERENCES CONFERENCIAS.pessoa(email) NOT NULL,
+	PRIMARY KEY(registo_antigo, email_autor)
+);
+GO

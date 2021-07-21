@@ -1,0 +1,2 @@
+-- Número de prescrições por especialidade médica
+γ especialidade; count(numPresc)-> total_presc (π numSNS,especialidade medico ⨝ π numPresc,numMedico prescricao)

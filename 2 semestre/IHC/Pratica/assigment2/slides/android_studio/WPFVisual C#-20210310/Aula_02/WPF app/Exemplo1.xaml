@@ -1,0 +1,22 @@
+﻿<Window x:Class="WPF_app.Exemplo1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_app"
+        mc:Ignorable="d"
+        Title="Exemplo1" Height="300" Width="300">
+    <Grid>
+        <StackPanel>
+            <Label Style="{StaticResource LabelStyle}" Content="ola mundo"/>
+            <WrapPanel>
+                <Image Source="Logo_UA.jpg" Width="100" Height="100"/>
+                <StackPanel >
+                    <Label Style="{StaticResource LabelStyle}" Content="nome1 "/>
+                    <Label Style="{StaticResource LabelStyle}" Content="nome2 " />
+                </StackPanel>
+            </WrapPanel>
+            <Button Content="return" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

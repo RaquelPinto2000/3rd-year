@@ -1,0 +1,12 @@
+C:\Academico\UA\universidade\3 ano\2 semestre\BD\Pratica\guiao1\ex3_guiao1\ex3_guiao1\bin\Debug\ex3_guiao1.exe.config
+C:\Academico\UA\universidade\3 ano\2 semestre\BD\Pratica\guiao1\ex3_guiao1\ex3_guiao1\bin\Debug\ex3_guiao1.exe
+C:\Academico\UA\universidade\3 ano\2 semestre\BD\Pratica\guiao1\ex3_guiao1\ex3_guiao1\bin\Debug\ex3_guiao1.pdb
+C:\Academico\UA\universidade\3 ano\2 semestre\BD\Pratica\guiao1\ex3_guiao1\ex3_guiao1\bin\Debug\ex3_guiao1.xml
+C:\Academico\UA\universidade\3 ano\2 semestre\BD\Pratica\guiao1\ex3_guiao1\ex3_guiao1\obj\Debug\ex3_guiao1.vbprojAssemblyReference.cache
+C:\Academico\UA\universidade\3 ano\2 semestre\BD\Pratica\guiao1\ex3_guiao1\ex3_guiao1\obj\Debug\ex3_guiao1.Form1.resources
+C:\Academico\UA\universidade\3 ano\2 semestre\BD\Pratica\guiao1\ex3_guiao1\ex3_guiao1\obj\Debug\ex3_guiao1.Resources.resources
+C:\Academico\UA\universidade\3 ano\2 semestre\BD\Pratica\guiao1\ex3_guiao1\ex3_guiao1\obj\Debug\ex3_guiao1.vbproj.GenerateResource.cache
+C:\Academico\UA\universidade\3 ano\2 semestre\BD\Pratica\guiao1\ex3_guiao1\ex3_guiao1\obj\Debug\ex3_guiao1.vbproj.CoreCompileInputs.cache
+C:\Academico\UA\universidade\3 ano\2 semestre\BD\Pratica\guiao1\ex3_guiao1\ex3_guiao1\obj\Debug\ex3_guiao1.exe
+C:\Academico\UA\universidade\3 ano\2 semestre\BD\Pratica\guiao1\ex3_guiao1\ex3_guiao1\obj\Debug\ex3_guiao1.xml
+C:\Academico\UA\universidade\3 ano\2 semestre\BD\Pratica\guiao1\ex3_guiao1\ex3_guiao1\obj\Debug\ex3_guiao1.pdb

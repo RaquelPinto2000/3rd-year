@@ -1,0 +1,26 @@
+Jun 19 08:18:15.729 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jun 19 08:18:15.729 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50143.
+Jun 19 08:18:15.739 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 19 08:18:15.740 HYPERVISOR: exec_cmd: hypervisor working_dir /home/raquel/Desktop/AR/Pratica/guioes extras/DNS_DHCP/project-files/dynamips 
+Jun 19 08:18:15.740 GENERAL: working_dir=/home/raquel/Desktop/AR/Pratica/guioes extras/DNS_DHCP/project-files/dynamips
+Jun 19 08:18:15.740 HYPERVISOR: exec_cmd: hypervisor working_dir /home/raquel/Desktop/AR/Pratica/guioes extras/DNS_DHCP/project-files/dynamips/f01baa85-54cd-49aa-967b-74bda07fd369 
+Jun 19 08:18:15.740 GENERAL: working_dir=/home/raquel/Desktop/AR/Pratica/guioes extras/DNS_DHCP/project-files/dynamips/f01baa85-54cd-49aa-967b-74bda07fd369
+Jun 19 08:18:15.740 HYPERVISOR: exec_cmd: vm create ESW1 2 c3725 
+Jun 19 08:18:15.740 VM: VM ESW1 created.
+Jun 19 08:18:15.740 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5008 
+Jun 19 08:18:15.741 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW1 
+Jun 19 08:18:15.741 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+Jun 19 08:18:15.741 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 19 08:18:15.741 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60a68e70 
+Jun 19 08:18:15.742 HYPERVISOR: exec_cmd: vm set_ios ESW1 /home/raquel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 19 08:18:15.742 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW1 c202.0fd1.0000 
+Jun 19 08:18:15.742 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+Jun 19 08:18:15.743 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 19 08:18:15.743 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+Jun 19 08:18:17.033 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 19 08:18:17.035 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 19 08:18:17.038 HYPERVISOR: exec_cmd: vm delete ESW1 
+Jun 19 08:18:17.038 VM: VM ESW1 destroyed.
+Jun 19 08:18:17.039 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 19 08:18:17.241 HYPERVISOR: Stopped.
+Jun 19 08:18:17.241 GENERAL: reset done.

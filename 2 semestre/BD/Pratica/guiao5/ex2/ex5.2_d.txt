@@ -1,0 +1,3 @@
+-- 5.2_d
+
+π codProd, unidades, fornecedor ((item) ⨝ numEnc = numero (encomenda))

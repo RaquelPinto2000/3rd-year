@@ -1,0 +1,17 @@
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_02_WPF_app\obj\Debug\MainWindow.g.cs
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_02_WPF_app\obj\Debug\App.g.cs
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_02_WPF_app\obj\Debug\Aula_02_WPF_app_MarkupCompile.cache
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_02_WPF_app\obj\Debug\Aula_02_WPF_app_MarkupCompile.lref
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_02_WPF_app\obj\Debug\Exemplo1.g.cs
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_02_WPF_app\bin\Debug\Aula_02_WPF_app.exe.config
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_02_WPF_app\bin\Debug\Aula_02_WPF_app.exe
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_02_WPF_app\bin\Debug\Aula_02_WPF_app.pdb
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_02_WPF_app\obj\Debug\App.baml
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_02_WPF_app\obj\Debug\Exemplo1.baml
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_02_WPF_app\obj\Debug\MainWindow.baml
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_02_WPF_app\obj\Debug\Aula_02_WPF_app.g.resources
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_02_WPF_app\obj\Debug\Aula_02_WPF_app.Properties.Resources.resources
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_02_WPF_app\obj\Debug\Aula_02_WPF_app.csproj.GenerateResource.cache
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_02_WPF_app\obj\Debug\Aula_02_WPF_app.csproj.CoreCompileInputs.cache
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_02_WPF_app\obj\Debug\Aula_02_WPF_app.exe
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_02_WPF_app\obj\Debug\Aula_02_WPF_app.pdb

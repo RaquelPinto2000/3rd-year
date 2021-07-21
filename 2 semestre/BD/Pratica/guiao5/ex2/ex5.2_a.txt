@@ -1,0 +1,1 @@
+(fornecedor) - π nif,nome,fax,endereco,condpag,tipo (((fornecedor)⨝nif=fornecedor (encomenda)))

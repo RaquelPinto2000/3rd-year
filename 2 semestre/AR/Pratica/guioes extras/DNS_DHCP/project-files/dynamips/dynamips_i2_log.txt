@@ -1,0 +1,10 @@
+Jun 19 08:18:15.685 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jun 19 08:18:15.685 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 34893.
+Jun 19 08:18:15.696 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 19 08:18:15.696 HYPERVISOR: exec_cmd: hypervisor working_dir /home/raquel/Desktop/AR/Pratica/guioes extras/DNS_DHCP/project-files/dynamips 
+Jun 19 08:18:15.696 GENERAL: working_dir=/home/raquel/Desktop/AR/Pratica/guioes extras/DNS_DHCP/project-files/dynamips
+Jun 19 08:18:15.696 HYPERVISOR: exec_cmd: ethsw create Switch1 
+Jun 19 08:18:17.032 HYPERVISOR: exec_cmd: ethsw delete Switch1 
+Jun 19 08:18:17.034 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 19 08:18:17.197 HYPERVISOR: Stopped.
+Jun 19 08:18:17.197 GENERAL: reset done.

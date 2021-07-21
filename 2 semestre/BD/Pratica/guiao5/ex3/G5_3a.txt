@@ -1,0 +1,1 @@
+paciente ⨝ (π numUtente paciente - π numUtente prescricao)

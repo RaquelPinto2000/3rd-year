@@ -1,0 +1,3 @@
+-- 5.2_b
+
+γ item.codProd;avg(unidades)->avg_unidades (item)

@@ -1,0 +1,9 @@
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ContactsC#\Contacts\bin\Debug\Contacts.exe
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ContactsC#\Contacts\bin\Debug\Contacts.pdb
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ContactsC#\Contacts\obj\x86\Debug\Contacts.csprojAssemblyReference.cache
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ContactsC#\Contacts\obj\x86\Debug\Contacts.Form1.resources
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ContactsC#\Contacts\obj\x86\Debug\Contacts.Properties.Resources.resources
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ContactsC#\Contacts\obj\x86\Debug\Contacts.csproj.GenerateResource.cache
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ContactsC#\Contacts\obj\x86\Debug\Contacts.csproj.CoreCompileInputs.cache
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ContactsC#\Contacts\obj\x86\Debug\Contacts.exe
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ContactsC#\Contacts\obj\x86\Debug\Contacts.pdb

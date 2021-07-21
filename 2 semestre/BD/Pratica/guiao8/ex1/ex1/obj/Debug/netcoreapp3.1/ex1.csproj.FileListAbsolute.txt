@@ -1,0 +1,15 @@
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ex1\ex1\bin\Debug\netcoreapp3.1\ex1.exe
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ex1\ex1\bin\Debug\netcoreapp3.1\ex1.deps.json
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ex1\ex1\bin\Debug\netcoreapp3.1\ex1.runtimeconfig.json
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ex1\ex1\bin\Debug\netcoreapp3.1\ex1.runtimeconfig.dev.json
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ex1\ex1\bin\Debug\netcoreapp3.1\ex1.dll
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ex1\ex1\bin\Debug\netcoreapp3.1\ex1.pdb
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ex1\ex1\obj\Debug\netcoreapp3.1\ex1.csprojAssemblyReference.cache
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ex1\ex1\obj\Debug\netcoreapp3.1\ex1.Form1.resources
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ex1\ex1\obj\Debug\netcoreapp3.1\ex1.csproj.GenerateResource.cache
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ex1\ex1\obj\Debug\netcoreapp3.1\ex1.AssemblyInfoInputs.cache
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ex1\ex1\obj\Debug\netcoreapp3.1\ex1.AssemblyInfo.cs
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ex1\ex1\obj\Debug\netcoreapp3.1\ex1.csproj.CoreCompileInputs.cache
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ex1\ex1\obj\Debug\netcoreapp3.1\ex1.dll
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ex1\ex1\obj\Debug\netcoreapp3.1\ex1.pdb
+C:\Academico\UA\3 ano\2 semestre\BD\Pratica\guiao8\ex1\ex1\obj\Debug\netcoreapp3.1\ex1.genruntimeconfig.cache

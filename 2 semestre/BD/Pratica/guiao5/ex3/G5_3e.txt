@@ -1,0 +1,3 @@
+-- Para cada farmácia, o número de fármacos de cada farmacêutica vendido
+-- γ telefone,numReg; count(nome)-> total_farm 
+γ nome,numRegFarm; count(numPresc) -> total_farm (π nome,prescricao.numPresc,numRegFarm ((π nome,telefone farmacia ⨝ nome=farmacia π farmacia,numPresc prescricao) ⨝ prescricao.numPresc=presc_farmaco.numPresc π numPresc,numRegFarm,nomeFarmaco presc_farmaco))

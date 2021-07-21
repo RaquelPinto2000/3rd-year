@@ -1,0 +1,3 @@
+-- 5.2_c
+
+γ avg(num_occurences)->avg_num_prod (γ numEnc; count(codProd)->num_occurences (item))

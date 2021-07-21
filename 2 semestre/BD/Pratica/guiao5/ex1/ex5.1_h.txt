@@ -1,0 +1,3 @@
+-- gestor de departamentos que não tenham dependentes
+
+π Fname,Ssn employee ⨝ Ssn=Mgr_ssn π Mgr_ssn department - π Fname,Ssn employee ⨝ Ssn=Essn π Essn dependent

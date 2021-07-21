@@ -1,0 +1,110 @@
+/*!
+
+=========================================================
+* Argon Dashboard React - v1.1.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-dashboard-react
+* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+import Index from "views/Index.js";
+import Profile from "views/examples/Profile.js";
+import Maps from "views/examples/Maps_Page.js";
+import Register from "views/examples/Register.js";
+import Login from "views/Login.js";
+import Accidents from "views/examples/Accidents.js";
+import AccidentDetails from "views/examples/AccidentDetails";
+import Edit_profile from "views/examples/Edit_profile";
+import Users_table from "views/examples/Users_table";
+import Video_Call_Sender from "views/examples/Video_Call_Sender";
+import Video_Call_Receiver from "views/examples/Video_Call_Receiver";
+
+
+var routes = [
+  {
+    path: "/index",
+    name: "Dashboard",
+    icon: "ni ni-tv-2 text-primary",
+    component: Index,
+    layout: "/admin"
+  },
+  {
+    path: "/accident_details/:id",
+    name: "Accident Details",
+    icon: "ni ni-planet text-blue",
+    component: AccidentDetails,
+    layout: "/admin"
+  },
+   {
+    path: "/maps",
+    name: "Maps",
+    icon: "ni ni-pin-3 text-orange",
+    component: Maps,
+    layout: "/admin"
+  },
+  {
+    path: "/user-profile",
+    name: "User Profile",
+    icon: "ni ni-single-02 text-yellow",
+    component: Profile,
+    layout: "/admin"
+  },
+  {
+    path: "/accidents",
+    name: "Accidents",
+    icon: "ni ni-ambulance text-purple",
+    component: Accidents,
+    layout: "/admin"
+  },
+  {
+    path: "/login",
+    name: "Login",
+    icon: "ni ni-key-25 text-info",
+    component: Login,
+    layout: "/auth"
+  },
+  {
+    path: "/register",
+    name: "Register",
+    icon: "ni ni-circle-08 text-pink",
+    component: Register,
+    layout: "/auth"
+  },
+  {
+    path: "/edit_profile",
+    name: "Edit Profile",
+    icon: "ni ni-single-02 text-yellow",
+    component: Edit_profile,
+    layout: "/admin"
+  },
+  {
+    path: "/users_table",
+    name: "Users Table",
+    icon: "ni ni-single-02 text-yellow",
+    component: Users_table,
+    layout: "/admin"
+  }
+  /*,{
+    path: "/video_call_sender",
+    name: "Video Call Sender",
+    icon: "ni ni-circle-08 text-pink",
+    component: Video_Call_Sender,
+    layout: "/admin"
+  },
+  {
+    path: "/video_call_receiver",
+    name: "Video Call Receiver",
+    icon: "ni ni-circle-08 text-pink",
+    component: Video_Call_Receiver,
+    layout: "/admin"
+  },*/
+];
+export default routes;

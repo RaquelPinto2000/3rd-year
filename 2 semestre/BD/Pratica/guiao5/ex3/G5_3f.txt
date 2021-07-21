@@ -1,0 +1,2 @@
+-- σ count>1 γ count 
+σ total>2 γ nome,paciente.numUtente; count(numMedico)->total (π numUtente,nome paciente ⨝ paciente.numUtente=prescricao.numUtente π numMedico,numUtente,numPresc prescricao)

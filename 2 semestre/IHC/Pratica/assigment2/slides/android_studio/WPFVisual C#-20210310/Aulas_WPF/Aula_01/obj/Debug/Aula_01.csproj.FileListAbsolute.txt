@@ -1,0 +1,14 @@
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_01\bin\Debug\Aula_01.exe.config
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_01\bin\Debug\Aula_01.exe
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_01\bin\Debug\Aula_01.pdb
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_01\obj\Debug\MainWindow.g.cs
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_01\obj\Debug\App.g.cs
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_01\obj\Debug\Aula_01_MarkupCompile.cache
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_01\obj\Debug\Aula_01_MarkupCompile.lref
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_01\obj\Debug\MainWindow.baml
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_01\obj\Debug\Aula_01.g.resources
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_01\obj\Debug\Aula_01.Properties.Resources.resources
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_01\obj\Debug\Aula_01.csproj.GenerateResource.cache
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_01\obj\Debug\Aula_01.csproj.CoreCompileInputs.cache
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_01\obj\Debug\Aula_01.exe
+D:\Paulo\Aulas\IHC_17-18\Praticas\WPF_17-18\Aulas_WPF\Aula_01\obj\Debug\Aula_01.pdb

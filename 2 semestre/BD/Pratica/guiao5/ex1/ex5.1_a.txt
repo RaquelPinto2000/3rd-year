@@ -1,0 +1,3 @@
+-- 5.1_a
+
+(π Pname,Pnumber (project) ⨝ Pnumber=Pno works_on) ⨝ Essn=Ssn (π Fname,Lname,Ssn (employee))

@@ -1,0 +1,1 @@
+π employee.Fname,employee.Lname,employee.Address ((σ Dlocation≠'Aveiro' (department ⟕ dept_location))⨝ Dno=Dnumber ((employee ⨝ Ssn=Essn works_on)⨝ Pnumber=Pno (σ Plocation='Aveiro' (π Plocation,Pnumber project))))

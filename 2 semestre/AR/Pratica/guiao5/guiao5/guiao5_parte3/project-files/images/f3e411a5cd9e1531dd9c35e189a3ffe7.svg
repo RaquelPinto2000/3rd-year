@@ -1,0 +1,14 @@
+<svg width="648" height="288"><text font-family="TypeWriter" font-size="10.0" font-weight="bold" fill="#000000" fill-opacity="1.0">Extra: Site-to-Site VPN based on IPSec Tunnels with Dynamic Maps
+
+NAO SAI NO TESTE PRATICO
+
+Desative a interface de túnel anterior: nenhum túnel de interface 0. 
+8. Em um cenário com vários túneis IPsec é vantajoso usar mapas dinâmicos que permitem o 
+estabelecimento de túneis de qualquer máquina para um hub central (agregador de criptografia) 
+sem qualquer configuração adicional nele. O roteador 1 irá tem a função de agregador de 
+criptografia e deve processar solicitações de encapsulamento IPsec para novas associações
+ de segurança de qualquer ponto de segurança de IP remoto com credenciais corretas, mesmo
+ que não conheça todos os parâmetros do mapa criptográfico necessário para se comunicar 
+com o par remoto e deve aceitar solicitações de novas associações de segurança de pares 
+anteriormente desconhecidos. Isso requer o uso de mapas de criptografia dinâmicos. 
+A configuração do Roteador 1 (apenas IPSec e DMAP) é a seguinte: </text></svg>
