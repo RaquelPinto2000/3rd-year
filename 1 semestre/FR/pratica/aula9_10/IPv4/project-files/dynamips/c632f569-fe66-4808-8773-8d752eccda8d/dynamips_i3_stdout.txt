@@ -1,0 +1,24 @@
+Cisco Router Simulation Platform (version 0.2.21-amd64/Linux stable)
+Copyright (c) 2005-2011 Christophe Fillot.
+Build date: Jul 12 2019 11:00:00
+
+Log file: writing to dynamips_i3_log.txt
+ILT: loaded table "mips64j" from cache.
+ILT: loaded table "mips64e" from cache.
+ILT: loaded table "ppc32j" from cache.
+ILT: loaded table "ppc32e" from cache.
+Hypervisor TCP control server started (IP 127.0.0.1 port 43285).
+NIO udp-0accc9a1-66d7-4b83-af6e-db75a9e3ee16: capturing to file '/home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/PCB_Ethernet0_to_NetB_Ethernet0.pcap'
+NIO udp-0accc9a1-66d7-4b83-af6e-db75a9e3ee16: ending packet capture.
+NIO udp-0accc9a1-66d7-4b83-af6e-db75a9e3ee16: capturing to file '/home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/PCB_Ethernet0_to_NetB_Ethernet0.pcap'
+NIO udp-0accc9a1-66d7-4b83-af6e-db75a9e3ee16: ending packet capture.
+NIO udp-63669768-ff30-4035-bd5c-d229ac6e3902: capturing to file '/home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/NetB_Ethernet2_to_R3_FastEthernet00.pcap'
+NIO udp-5dfacfb1-b133-466e-93b1-8a411845b3da: capturing to file '/home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/NetB_Ethernet1_to_R2_FastEthernet01.pcap'
+NIO udp-5dfacfb1-b133-466e-93b1-8a411845b3da: ending packet capture.
+NIO udp-63669768-ff30-4035-bd5c-d229ac6e3902: ending packet capture.
+NIO udp-0accc9a1-66d7-4b83-af6e-db75a9e3ee16: capturing to file '/home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/PCB_Ethernet0_to_NetB_Ethernet0.pcap'
+NIO udp-0accc9a1-66d7-4b83-af6e-db75a9e3ee16: ending packet capture.
+Hypervisor: closing control sockets.
+Hypervisor: closing remote client connections.
+Shutdown in progress...
+Shutdown completed.

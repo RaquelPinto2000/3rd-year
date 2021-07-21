@@ -1,0 +1,37 @@
+Nov 27 16:11:21.705 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Nov 27 16:11:21.705 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 37051.
+Nov 27 16:11:21.711 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 27 16:11:21.711 HYPERVISOR: exec_cmd: hypervisor working_dir /home/raquel/Desktop/FR/pratica/aula5_6_7/guiao3_parte3_Switch/project-files/dynamips 
+Nov 27 16:11:21.711 GENERAL: working_dir=/home/raquel/Desktop/FR/pratica/aula5_6_7/guiao3_parte3_Switch/project-files/dynamips
+Nov 27 16:11:21.712 HYPERVISOR: exec_cmd: hypervisor working_dir /home/raquel/Desktop/FR/pratica/aula5_6_7/guiao3_parte3_Switch/project-files/dynamips/57d78609-b798-4795-bf38-843a47b2e3e4 
+Nov 27 16:11:21.712 GENERAL: working_dir=/home/raquel/Desktop/FR/pratica/aula5_6_7/guiao3_parte3_Switch/project-files/dynamips/57d78609-b798-4795-bf38-843a47b2e3e4
+Nov 27 16:11:21.712 HYPERVISOR: exec_cmd: vm create ESW1 1 c3725 
+Nov 27 16:11:21.712 VM: VM ESW1 created.
+Nov 27 16:11:21.712 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5004 
+Nov 27 16:11:21.712 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW1 
+Nov 27 16:11:21.713 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+Nov 27 16:11:21.713 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Nov 27 16:11:21.713 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60a68e70 
+Nov 27 16:11:21.713 HYPERVISOR: exec_cmd: vm set_ios ESW1 /home/raquel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Nov 27 16:11:21.714 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW1 c201.10b0.0000 
+Nov 27 16:11:21.714 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+Nov 27 16:11:21.714 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Nov 27 16:11:21.714 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+Nov 27 16:11:21.771 HYPERVISOR: exec_cmd: nio create_udp udp-8bb80c0d-92a2-496e-818e-e745a1160941 10002 127.0.0.1 10003 
+Nov 27 16:11:21.988 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 5 udp-8bb80c0d-92a2-496e-818e-e745a1160941 
+Nov 27 16:11:21.989 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Nov 27 16:11:22.047 HYPERVISOR: exec_cmd: nio create_udp udp-34ab3f48-dcdc-415c-9939-9f631f8986fd 10006 127.0.0.1 10007 
+Nov 27 16:11:22.048 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 0 udp-34ab3f48-dcdc-415c-9939-9f631f8986fd 
+Nov 27 16:11:22.048 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Nov 27 16:11:22.068 HYPERVISOR: exec_cmd: nio create_udp udp-4d33f9f0-0239-4961-b077-94ee8533914d 10010 127.0.0.1 10011 
+Nov 27 16:11:22.070 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 15 udp-4d33f9f0-0239-4961-b077-94ee8533914d 
+Nov 27 16:11:22.070 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Nov 27 16:11:40.451 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Nov 27 16:11:40.458 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Nov 27 16:11:40.906 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Nov 27 16:11:40.907 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Nov 27 16:11:40.909 HYPERVISOR: exec_cmd: vm delete ESW1 
+Nov 27 16:11:40.909 VM: VM ESW1 destroyed.
+Nov 27 16:11:40.910 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 27 16:11:41.237 HYPERVISOR: Stopped.
+Nov 27 16:11:41.237 GENERAL: reset done.

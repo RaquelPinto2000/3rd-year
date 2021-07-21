@@ -1,0 +1,43 @@
+Dec 03 09:33:19.372 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Dec 03 09:33:19.372 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50563.
+Dec 03 09:33:19.376 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 03 09:33:19.376 HYPERVISOR: exec_cmd: hypervisor working_dir /home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/dynamips 
+Dec 03 09:33:19.376 GENERAL: working_dir=/home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/dynamips
+Dec 03 09:33:19.377 HYPERVISOR: exec_cmd: ethsw create NetA 
+Dec 03 09:33:19.640 HYPERVISOR: exec_cmd: nio create_udp udp-6bf92ee6-c76d-491a-ab75-8413bb59ce41 10001 127.0.0.1 10000 
+Dec 03 09:33:19.640 HYPERVISOR: exec_cmd: ethsw add_nio NetA udp-6bf92ee6-c76d-491a-ab75-8413bb59ce41 
+Dec 03 09:33:19.657 HYPERVISOR: exec_cmd: ethsw set_access_port NetA udp-6bf92ee6-c76d-491a-ab75-8413bb59ce41 1 
+Dec 03 09:33:20.155 HYPERVISOR: exec_cmd: nio create_udp udp-1b686e0e-093f-4f5e-96d7-0b4bed44abaf 10010 127.0.0.1 10011 
+Dec 03 09:33:20.155 HYPERVISOR: exec_cmd: ethsw add_nio NetA udp-1b686e0e-093f-4f5e-96d7-0b4bed44abaf 
+Dec 03 09:33:20.160 HYPERVISOR: exec_cmd: ethsw set_access_port NetA udp-1b686e0e-093f-4f5e-96d7-0b4bed44abaf 1 
+Dec 03 09:33:20.209 HYPERVISOR: exec_cmd: nio create_udp udp-bf1e17e3-6f1d-48a8-97e9-2ce303038b51 10014 127.0.0.1 10015 
+Dec 03 09:33:20.209 HYPERVISOR: exec_cmd: ethsw add_nio NetA udp-bf1e17e3-6f1d-48a8-97e9-2ce303038b51 
+Dec 03 09:33:20.220 HYPERVISOR: exec_cmd: ethsw set_access_port NetA udp-bf1e17e3-6f1d-48a8-97e9-2ce303038b51 1 
+Dec 03 09:36:03.178 HYPERVISOR: exec_cmd: nio bind_filter udp-6bf92ee6-c76d-491a-ab75-8413bb59ce41 2 capture 
+Dec 03 09:36:03.179 HYPERVISOR: exec_cmd: nio setup_filter udp-6bf92ee6-c76d-491a-ab75-8413bb59ce41 2 en10mb /home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/PCA_Ethernet0_to_NetA_Ethernet0.pcap 
+Dec 03 10:02:23.503 HYPERVISOR: exec_cmd: nio unbind_filter udp-6bf92ee6-c76d-491a-ab75-8413bb59ce41 2 
+Dec 03 10:02:41.328 HYPERVISOR: exec_cmd: nio bind_filter udp-6bf92ee6-c76d-491a-ab75-8413bb59ce41 2 capture 
+Dec 03 10:02:41.328 HYPERVISOR: exec_cmd: nio setup_filter udp-6bf92ee6-c76d-491a-ab75-8413bb59ce41 2 en10mb /home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/PCA_Ethernet0_to_NetA_Ethernet0.pcap 
+Dec 03 10:05:04.943 HYPERVISOR: exec_cmd: nio unbind_filter udp-6bf92ee6-c76d-491a-ab75-8413bb59ce41 2 
+Dec 03 10:08:30.483 HYPERVISOR: exec_cmd: nio bind_filter udp-1b686e0e-093f-4f5e-96d7-0b4bed44abaf 2 capture 
+Dec 03 10:08:30.484 HYPERVISOR: exec_cmd: nio setup_filter udp-1b686e0e-093f-4f5e-96d7-0b4bed44abaf 2 en10mb /home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/NetA_Ethernet1_to_R2_FastEthernet00.pcap 
+Dec 03 10:08:36.462 HYPERVISOR: exec_cmd: nio bind_filter udp-bf1e17e3-6f1d-48a8-97e9-2ce303038b51 2 capture 
+Dec 03 10:08:36.463 HYPERVISOR: exec_cmd: nio setup_filter udp-bf1e17e3-6f1d-48a8-97e9-2ce303038b51 2 en10mb /home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/NetA_Ethernet2_to_R1_FastEthernet00.pcap 
+Dec 03 10:12:44.329 HYPERVISOR: exec_cmd: nio unbind_filter udp-1b686e0e-093f-4f5e-96d7-0b4bed44abaf 2 
+Dec 03 10:13:05.194 HYPERVISOR: exec_cmd: nio unbind_filter udp-bf1e17e3-6f1d-48a8-97e9-2ce303038b51 2 
+Dec 03 10:13:53.858 HYPERVISOR: exec_cmd: nio bind_filter udp-bf1e17e3-6f1d-48a8-97e9-2ce303038b51 2 capture 
+Dec 03 10:13:53.859 HYPERVISOR: exec_cmd: nio setup_filter udp-bf1e17e3-6f1d-48a8-97e9-2ce303038b51 2 en10mb /home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/NetA_Ethernet2_to_R1_FastEthernet00.pcap 
+Dec 03 10:26:54.366 HYPERVISOR: exec_cmd: nio unbind_filter udp-bf1e17e3-6f1d-48a8-97e9-2ce303038b51 2 
+Dec 03 10:27:21.881 HYPERVISOR: exec_cmd: nio bind_filter udp-6bf92ee6-c76d-491a-ab75-8413bb59ce41 2 capture 
+Dec 03 10:27:21.881 HYPERVISOR: exec_cmd: nio setup_filter udp-6bf92ee6-c76d-491a-ab75-8413bb59ce41 2 en10mb /home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/PCA_Ethernet0_to_NetA_Ethernet0.pcap 
+Dec 03 10:30:36.047 HYPERVISOR: exec_cmd: nio unbind_filter udp-6bf92ee6-c76d-491a-ab75-8413bb59ce41 2 
+Dec 03 10:43:45.245 HYPERVISOR: exec_cmd: nio bind_filter udp-1b686e0e-093f-4f5e-96d7-0b4bed44abaf 2 capture 
+Dec 03 10:43:45.245 HYPERVISOR: exec_cmd: nio setup_filter udp-1b686e0e-093f-4f5e-96d7-0b4bed44abaf 2 en10mb /home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/NetA_Ethernet1_to_R2_FastEthernet00.pcap 
+Dec 03 10:43:55.140 HYPERVISOR: exec_cmd: nio bind_filter udp-bf1e17e3-6f1d-48a8-97e9-2ce303038b51 2 capture 
+Dec 03 10:43:55.140 HYPERVISOR: exec_cmd: nio setup_filter udp-bf1e17e3-6f1d-48a8-97e9-2ce303038b51 2 en10mb /home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/NetA_Ethernet2_to_R1_FastEthernet00.pcap 
+Dec 03 10:46:21.924 HYPERVISOR: exec_cmd: nio unbind_filter udp-1b686e0e-093f-4f5e-96d7-0b4bed44abaf 2 
+Dec 03 10:46:24.353 HYPERVISOR: exec_cmd: nio unbind_filter udp-bf1e17e3-6f1d-48a8-97e9-2ce303038b51 2 
+Dec 03 10:51:32.907 HYPERVISOR: exec_cmd: ethsw delete NetA 
+Dec 03 10:51:32.964 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 03 10:51:33.335 HYPERVISOR: Stopped.
+Dec 03 10:51:33.335 GENERAL: reset done.

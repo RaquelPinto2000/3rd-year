@@ -1,0 +1,75 @@
+{% extends "base.html" %} {% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-style.css') }}">
+    
+  </head>
+
+  
+
+  
+    <div id="main">
+        <div class="container">
+            <div class="row center d-flex align-items-center myheader">
+                <div class="col">
+                    <h2>Escolha um PT</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Services -->
+        <section class="services">
+            <div class="container">
+                
+            <div class="row center">
+                {% for x in ll %}
+                <div class="col-md-4">
+                   
+                    <div class="service-item second-item">
+                        <a href="{{ url_for('login') }}"><h4>{{x[1]}}</h4></a>
+                    </div>
+                </div>
+               {% endfor %}
+            </div>
+        </section>
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-target=".bd-example-modal-lg">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">A sua conta foi criada com sucesso</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row center align-items-center">
+                            <div class="col-md-4">
+                                <a href="{{ url_for('login') }}" class="btn btn-primary ml-4">ok</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+</html>
+{% endblock %}

@@ -1,0 +1,5 @@
+Link para o protótipo interativo
+https://ams20-301.github.io/prototipo/
+
+Caso não consiga reproduzir o vídeo que vai na entrega aceder ao link:
+https://ams20-301.github.io/documentacao

@@ -1,0 +1,110 @@
+Oct 22 08:30:02.561 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Oct 22 08:30:02.561 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41221.
+Oct 22 08:30:02.571 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 22 08:30:02.572 HYPERVISOR: exec_cmd: hypervisor working_dir /home/raquel/Desktop/FR/pratica/aula 1/parte 2/ex7/project-files/dynamips 
+Oct 22 08:30:02.572 GENERAL: working_dir=/home/raquel/Desktop/FR/pratica/aula 1/parte 2/ex7/project-files/dynamips
+Oct 22 08:30:02.572 HYPERVISOR: exec_cmd: hypervisor working_dir /home/raquel/Desktop/FR/pratica/aula 1/parte 2/ex7/project-files/dynamips/f30dbfb6-e968-45be-bf71-2c332ab956f0 
+Oct 22 08:30:02.572 GENERAL: working_dir=/home/raquel/Desktop/FR/pratica/aula 1/parte 2/ex7/project-files/dynamips/f30dbfb6-e968-45be-bf71-2c332ab956f0
+Oct 22 08:30:02.572 HYPERVISOR: exec_cmd: vm create ESW1 2 c3725 
+Oct 22 08:30:02.572 VM: VM ESW1 created.
+Oct 22 08:30:02.572 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5004 
+Oct 22 08:30:02.573 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW1 
+Oct 22 08:30:02.573 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+Oct 22 08:30:02.573 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 08:30:02.573 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60a68e70 
+Oct 22 08:30:02.574 HYPERVISOR: exec_cmd: vm set_ios ESW1 /home/raquel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 22 08:30:02.574 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW1 c202.10ac.0000 
+Oct 22 08:30:02.574 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+Oct 22 08:30:02.574 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 08:30:02.574 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+Oct 22 08:30:02.661 HYPERVISOR: exec_cmd: nio create_udp udp-f59934f3-fb37-4d58-bcae-acdb3b31a7bd 10002 127.0.0.1 10003 
+Oct 22 08:30:02.876 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 14 udp-f59934f3-fb37-4d58-bcae-acdb3b31a7bd 
+Oct 22 08:30:02.878 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 08:30:03.146 HYPERVISOR: exec_cmd: nio create_udp udp-ae33367d-65ad-4337-be4c-d26d3af9c523 10008 127.0.0.1 10009 
+Oct 22 08:30:03.150 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 15 udp-ae33367d-65ad-4337-be4c-d26d3af9c523 
+Oct 22 08:30:03.150 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 08:30:03.190 HYPERVISOR: exec_cmd: nio create_udp udp-cbc93454-7865-47c5-96ec-dc3af707e06e 10012 127.0.0.1 10013 
+Oct 22 08:30:03.191 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 13 udp-cbc93454-7865-47c5-96ec-dc3af707e06e 
+Oct 22 08:30:03.191 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 08:32:55.256 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Oct 22 08:32:55.256 VM: VM Ghost created.
+Oct 22 08:32:55.257 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/raquel/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 22 08:32:55.258 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 22 08:32:55.259 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/raquel/Desktop/FR/pratica/aula 1/parte 2/ex7/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 22 08:32:55.260 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 22 08:32:55.262 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Oct 22 08:32:55.262 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 22 08:32:55.737 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 22 08:32:55.738 HYPERVISOR: exec_cmd: vm stop Ghost 
+Oct 22 08:32:55.896 VM: VM Ghost shutdown.
+Oct 22 08:32:55.898 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Oct 22 08:32:55.900 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 22 08:32:55.900 VM: VM Ghost destroyed.
+Oct 22 08:32:55.902 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Oct 22 08:32:55.903 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 /home/raquel/Desktop/FR/pratica/aula 1/parte 2/ex7/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 22 08:32:55.904 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 08:32:55.905 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i2_startup-config.cfg 
+Oct 22 08:32:55.905 HYPERVISOR: exec_cmd: vm start ESW1 
+Oct 22 08:42:26.210 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Oct 22 08:42:26.214 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Oct 22 08:43:38.308 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 08:43:38.309 HYPERVISOR: exec_cmd: vm stop ESW1 
+Oct 22 08:43:38.430 VM: VM ESW1 shutdown.
+Oct 22 08:43:38.430 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Oct 22 08:43:41.510 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Oct 22 08:43:41.515 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 /home/raquel/Desktop/FR/pratica/aula 1/parte 2/ex7/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 22 08:43:41.516 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 08:43:41.521 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i2_startup-config.cfg 
+Oct 22 08:43:41.526 HYPERVISOR: exec_cmd: vm start ESW1 
+Oct 22 08:48:34.706 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 08:48:34.707 HYPERVISOR: exec_cmd: vm stop ESW1 
+Oct 22 08:48:34.832 VM: VM ESW1 shutdown.
+Oct 22 08:48:34.833 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Oct 22 08:48:36.279 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Oct 22 08:48:36.283 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 /home/raquel/Desktop/FR/pratica/aula 1/parte 2/ex7/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 22 08:48:36.287 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 08:48:36.288 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i2_startup-config.cfg 
+Oct 22 08:48:36.291 HYPERVISOR: exec_cmd: vm start ESW1 
+Oct 22 08:49:51.155 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 08:49:51.156 HYPERVISOR: exec_cmd: vm stop ESW1 
+Oct 22 08:49:51.267 VM: VM ESW1 shutdown.
+Oct 22 08:49:51.268 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Oct 22 08:49:52.203 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Oct 22 08:49:52.207 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 /home/raquel/Desktop/FR/pratica/aula 1/parte 2/ex7/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 22 08:49:52.209 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 08:49:52.220 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i2_startup-config.cfg 
+Oct 22 08:49:52.225 HYPERVISOR: exec_cmd: vm start ESW1 
+Oct 22 08:50:48.291 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 08:50:48.292 HYPERVISOR: exec_cmd: vm stop ESW1 
+Oct 22 08:50:48.402 VM: VM ESW1 shutdown.
+Oct 22 08:50:48.403 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Oct 22 08:50:50.064 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Oct 22 08:50:50.073 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 /home/raquel/Desktop/FR/pratica/aula 1/parte 2/ex7/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 22 08:50:50.073 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 08:50:50.074 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i2_startup-config.cfg 
+Oct 22 08:50:50.079 HYPERVISOR: exec_cmd: vm start ESW1 
+Oct 22 09:22:45.652 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 09:22:45.653 HYPERVISOR: exec_cmd: vm stop ESW1 
+Oct 22 09:22:45.784 VM: VM ESW1 shutdown.
+Oct 22 09:22:45.786 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Oct 22 09:22:47.530 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Oct 22 09:22:47.534 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 /home/raquel/Desktop/FR/pratica/aula 1/parte 2/ex7/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 22 09:22:47.534 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 09:22:47.537 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i2_startup-config.cfg 
+Oct 22 09:22:47.538 HYPERVISOR: exec_cmd: vm start ESW1 
+Oct 22 09:33:29.642 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Oct 22 09:33:29.648 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 /home/raquel/Desktop/FR/pratica/aula 1/parte 2/ex7/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Oct 22 09:33:29.650 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 09:50:28.624 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 09:50:28.628 HYPERVISOR: exec_cmd: vm stop ESW1 
+Oct 22 09:50:28.749 VM: VM ESW1 shutdown.
+Oct 22 09:50:28.750 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Oct 22 09:50:39.667 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 09:50:39.668 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Oct 22 09:50:40.024 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 22 09:50:40.025 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Oct 22 09:50:40.027 HYPERVISOR: exec_cmd: vm delete ESW1 
+Oct 22 09:50:40.027 VM: VM ESW1 destroyed.
+Oct 22 09:50:40.028 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 22 09:50:40.304 HYPERVISOR: Stopped.
+Oct 22 09:50:40.304 GENERAL: reset done.

@@ -1,0 +1,37 @@
+Dec 03 09:33:19.388 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Dec 03 09:33:19.388 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56573.
+Dec 03 09:33:19.399 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 03 09:33:19.399 HYPERVISOR: exec_cmd: hypervisor working_dir /home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/dynamips 
+Dec 03 09:33:19.399 GENERAL: working_dir=/home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/dynamips
+Dec 03 09:33:19.400 HYPERVISOR: exec_cmd: ethsw create NetC 
+Dec 03 09:33:19.711 HYPERVISOR: exec_cmd: nio create_udp udp-968539df-0527-44d9-a8d8-36eb37c2dd61 10003 127.0.0.1 10002 
+Dec 03 09:33:19.711 HYPERVISOR: exec_cmd: ethsw add_nio NetC udp-968539df-0527-44d9-a8d8-36eb37c2dd61 
+Dec 03 09:33:19.729 HYPERVISOR: exec_cmd: ethsw set_access_port NetC udp-968539df-0527-44d9-a8d8-36eb37c2dd61 1 
+Dec 03 09:33:20.507 HYPERVISOR: exec_cmd: nio create_udp udp-0be3072d-0169-469a-832f-69759e302d36 10018 127.0.0.1 10019 
+Dec 03 09:33:20.507 HYPERVISOR: exec_cmd: ethsw add_nio NetC udp-0be3072d-0169-469a-832f-69759e302d36 
+Dec 03 09:33:20.514 HYPERVISOR: exec_cmd: ethsw set_access_port NetC udp-0be3072d-0169-469a-832f-69759e302d36 1 
+Dec 03 09:33:20.558 HYPERVISOR: exec_cmd: nio create_udp udp-a4ec4583-a797-4df8-ad9c-eedcc50413a4 10022 127.0.0.1 10023 
+Dec 03 09:33:20.558 HYPERVISOR: exec_cmd: ethsw add_nio NetC udp-a4ec4583-a797-4df8-ad9c-eedcc50413a4 
+Dec 03 09:33:20.574 HYPERVISOR: exec_cmd: ethsw set_access_port NetC udp-a4ec4583-a797-4df8-ad9c-eedcc50413a4 1 
+Dec 03 09:35:52.795 HYPERVISOR: exec_cmd: nio bind_filter udp-968539df-0527-44d9-a8d8-36eb37c2dd61 2 capture 
+Dec 03 09:35:52.795 HYPERVISOR: exec_cmd: nio setup_filter udp-968539df-0527-44d9-a8d8-36eb37c2dd61 2 en10mb /home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/PCC_Ethernet0_to_NetC_Ethernet0.pcap 
+Dec 03 10:02:29.863 HYPERVISOR: exec_cmd: nio unbind_filter udp-968539df-0527-44d9-a8d8-36eb37c2dd61 2 
+Dec 03 10:02:37.594 HYPERVISOR: exec_cmd: nio bind_filter udp-968539df-0527-44d9-a8d8-36eb37c2dd61 2 capture 
+Dec 03 10:02:37.595 HYPERVISOR: exec_cmd: nio setup_filter udp-968539df-0527-44d9-a8d8-36eb37c2dd61 2 en10mb /home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/PCC_Ethernet0_to_NetC_Ethernet0.pcap 
+Dec 03 10:04:54.830 HYPERVISOR: exec_cmd: nio unbind_filter udp-968539df-0527-44d9-a8d8-36eb37c2dd61 2 
+Dec 03 10:08:43.502 HYPERVISOR: exec_cmd: nio bind_filter udp-0be3072d-0169-469a-832f-69759e302d36 2 capture 
+Dec 03 10:08:43.503 HYPERVISOR: exec_cmd: nio setup_filter udp-0be3072d-0169-469a-832f-69759e302d36 2 en10mb /home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/NetC_Ethernet1_to_R1_FastEthernet01.pcap 
+Dec 03 10:08:50.512 HYPERVISOR: exec_cmd: nio bind_filter udp-a4ec4583-a797-4df8-ad9c-eedcc50413a4 2 capture 
+Dec 03 10:08:50.513 HYPERVISOR: exec_cmd: nio setup_filter udp-a4ec4583-a797-4df8-ad9c-eedcc50413a4 2 en10mb /home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/NetC_Ethernet2_to_R3_FastEthernet01.pcap 
+Dec 03 10:12:58.635 HYPERVISOR: exec_cmd: nio unbind_filter udp-a4ec4583-a797-4df8-ad9c-eedcc50413a4 2 
+Dec 03 10:13:01.321 HYPERVISOR: exec_cmd: nio unbind_filter udp-0be3072d-0169-469a-832f-69759e302d36 2 
+Dec 03 10:14:01.697 HYPERVISOR: exec_cmd: nio bind_filter udp-0be3072d-0169-469a-832f-69759e302d36 2 capture 
+Dec 03 10:14:01.697 HYPERVISOR: exec_cmd: nio setup_filter udp-0be3072d-0169-469a-832f-69759e302d36 2 en10mb /home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/NetC_Ethernet1_to_R1_FastEthernet01.pcap 
+Dec 03 10:26:52.299 HYPERVISOR: exec_cmd: nio unbind_filter udp-0be3072d-0169-469a-832f-69759e302d36 2 
+Dec 03 10:27:30.900 HYPERVISOR: exec_cmd: nio bind_filter udp-968539df-0527-44d9-a8d8-36eb37c2dd61 2 capture 
+Dec 03 10:27:30.900 HYPERVISOR: exec_cmd: nio setup_filter udp-968539df-0527-44d9-a8d8-36eb37c2dd61 2 en10mb /home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/PCC_Ethernet0_to_NetC_Ethernet0.pcap 
+Dec 03 10:30:44.011 HYPERVISOR: exec_cmd: nio unbind_filter udp-968539df-0527-44d9-a8d8-36eb37c2dd61 2 
+Dec 03 10:51:32.906 HYPERVISOR: exec_cmd: ethsw delete NetC 
+Dec 03 10:51:32.955 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 03 10:51:33.367 HYPERVISOR: Stopped.
+Dec 03 10:51:33.367 GENERAL: reset done.

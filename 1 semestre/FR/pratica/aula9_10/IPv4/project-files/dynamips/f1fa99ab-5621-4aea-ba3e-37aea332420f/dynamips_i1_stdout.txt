@@ -1,0 +1,26 @@
+Cisco Router Simulation Platform (version 0.2.21-amd64/Linux stable)
+Copyright (c) 2005-2011 Christophe Fillot.
+Build date: Jul 12 2019 11:00:00
+
+Log file: writing to dynamips_i1_log.txt
+Hypervisor TCP control server started (IP 127.0.0.1 port 50563).
+NIO udp-6bf92ee6-c76d-491a-ab75-8413bb59ce41: capturing to file '/home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/PCA_Ethernet0_to_NetA_Ethernet0.pcap'
+NIO udp-6bf92ee6-c76d-491a-ab75-8413bb59ce41: ending packet capture.
+NIO udp-6bf92ee6-c76d-491a-ab75-8413bb59ce41: capturing to file '/home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/PCA_Ethernet0_to_NetA_Ethernet0.pcap'
+NIO udp-6bf92ee6-c76d-491a-ab75-8413bb59ce41: ending packet capture.
+NIO udp-1b686e0e-093f-4f5e-96d7-0b4bed44abaf: capturing to file '/home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/NetA_Ethernet1_to_R2_FastEthernet00.pcap'
+NIO udp-bf1e17e3-6f1d-48a8-97e9-2ce303038b51: capturing to file '/home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/NetA_Ethernet2_to_R1_FastEthernet00.pcap'
+NIO udp-1b686e0e-093f-4f5e-96d7-0b4bed44abaf: ending packet capture.
+NIO udp-bf1e17e3-6f1d-48a8-97e9-2ce303038b51: ending packet capture.
+NIO udp-bf1e17e3-6f1d-48a8-97e9-2ce303038b51: capturing to file '/home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/NetA_Ethernet2_to_R1_FastEthernet00.pcap'
+NIO udp-bf1e17e3-6f1d-48a8-97e9-2ce303038b51: ending packet capture.
+NIO udp-6bf92ee6-c76d-491a-ab75-8413bb59ce41: capturing to file '/home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/PCA_Ethernet0_to_NetA_Ethernet0.pcap'
+NIO udp-6bf92ee6-c76d-491a-ab75-8413bb59ce41: ending packet capture.
+NIO udp-1b686e0e-093f-4f5e-96d7-0b4bed44abaf: capturing to file '/home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/NetA_Ethernet1_to_R2_FastEthernet00.pcap'
+NIO udp-bf1e17e3-6f1d-48a8-97e9-2ce303038b51: capturing to file '/home/raquel/Desktop/FR/pratica/aula9_/IPv4/project-files/captures/NetA_Ethernet2_to_R1_FastEthernet00.pcap'
+NIO udp-1b686e0e-093f-4f5e-96d7-0b4bed44abaf: ending packet capture.
+NIO udp-bf1e17e3-6f1d-48a8-97e9-2ce303038b51: ending packet capture.
+Hypervisor: closing control sockets.
+Hypervisor: closing remote client connections.
+Shutdown in progress...
+Shutdown completed.

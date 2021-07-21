@@ -1,0 +1,7 @@
+flask
+gunicorn
+email_validator
+flask_babelex
+flask-user
+flask_login
+werkzeug
