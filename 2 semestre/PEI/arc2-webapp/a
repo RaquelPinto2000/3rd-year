@@ -1,0 +1,1000 @@
+  964  ls
+  965  cd ..
+  966  npm start
+  967  cd counter-app/
+  968  npm start
+  969  cd ..
+  970  mkdir testelive2
+  971  ls
+  972  cd testlive2
+  973  cd testelive2/
+  974  create-react-app react-app
+  975  npx create-react-app react-app 
+  976  cd react-app/
+  977  npm start
+  978  npm i webrtc-streamer
+  979  ls
+  980  ls src/
+  981  code .
+  982  npm start
+  983  ls
+  984  cd node_modules/webrtc-streamer/
+  985  npm start
+  986  ls
+  987  cat README.md 
+  988  ls
+  989  cd ..
+  990  cd .
+  991  cd ..
+  992  mkdir ss
+  993  cd ss
+  994  npm i webrtc-streamer
+  995  npm start
+  996  cd ..
+  997  mkdir testyt
+  998  cd testyt
+  999  npm init
+ 1000  ls
+ 1001  npm install webrtc-streamer
+ 1002  ls
+ 1003  npm uninstall webrtc-streamer
+ 1004  ls
+ 1005  npm install webrtc-streamer --save
+ 1006  ls
+ 1007  cat package.json 
+ 1008  npm install webrtc-streamer --save
+ 1009  npm audit
+ 1010  npm update
+ 1011  npm -version
+ 1012  nvm -v
+ 1013  nvm --version
+ 1014  nvm install-latest-npm
+ 1015  npm -version
+ 1016  npm install webrtc-streamer --save
+ 1017  npm start
+ 1018  npm uninstall webrtc-streamer
+ 1019  npm install webrtc-streamer --save
+ 1020  npm start
+ 1021  npm install
+ 1022  npm start
+ 1023  npm run
+ 1024  cd testyt/
+ 1025  ls
+ 1026  npm uninstall webrtc-streamer
+ 1027  npm install webrtc-streamer --save
+ 1028  npm audit fix
+ 1029  cd ..
+ 1030  git clone https://github.com/renanpupin/nodejs-webrtc-video-stream
+ 1031  cd nodejs-webrtc-video-stream/
+ 1032  npm install
+ 1033  node server.js
+ 1034  npm init @vitejs/app
+ 1035  cd webrtc-demo/
+ 1036  npm install firebase
+ 1037  ls
+ 1038  node server.js 
+ 1039  npm start
+ 1040  code .
+ 1041  npm start
+ 1042  python3 -m http.server
+ 1043  git clone https://github.com/mpromonet/webrtc-streamer-html.git
+ 1044  p3 -m http.server
+ 1045  cd ..
+ 1046  p3 -m http.server
+ 1047  it
+ 1048  cvpn
+ 1049  git clone https://github.com/mpromonet/webrtc-streamer.git
+ 1050  cd webrtc-streamer
+ 1051  docker run -p 8000:8000 -it mpromonet/webrtc-streamer
+ 1052  sudo docker run -p 8000:8000 -it mpromonet/webrtc-streamer
+ 1053  sudo docker run -p 8000:8000 -it mpromonet/webrtc-streamer -n it rtsp://atcll-p1-camera.nap.av.it.pt/11
+ 1054  cd ..
+ 1055  export GO111MODULE=on
+ 1056  git clone https://github.com/pion/rtsp-bench.git
+ 1057  cd rtsp-bench/server
+ 1058  go run main.go
+ 1059  go -version
+ 1060  go --version
+ 1061  sudo apt install golang-go
+ 1062  go run main.go
+ 1063  go version
+ 1064  cd ..
+ 1065  curl -O https://storage.googleapis.com/golang/go1.13.5.linux-amd64.tar.gz
+ 1066  tar -xvf go1.13.5.linux-amd64.tar.gz
+ 1067  sudo mv go /usr/local
+ 1068  ls
+ 1069  sudo mv /go /usr/local
+ 1070  sudo mv go/ /usr/local
+ 1071  sudo mv go /usr/local
+ 1072  sudo mv go /usr/local/
+ 1073  sudo mv ~/Desktop/go /usr/local/
+ 1074  sudo subl ~/.profile
+ 1075  cd /usr/local/go/
+ 1076  ls
+ 1077  sudo subl ~/.profile
+ 1078  sudo vim ~/.profile
+ 1079  sudo nano ~/.profile
+ 1080  go version
+ 1081  source ~/.profile
+ 1082  go version
+ 1083  D
+ 1084  cd aaaaa
+ 1085  ls
+ 1086  cd rtsp-bench/
+ 1087  cd rtsp-bench/server
+ 1088  ..
+ 1089  cd rtsp-bench/server
+ 1090  go run main.go 
+ 1091  go version
+ 1092  source ~/.profile
+ 1093  go version
+ 1094  go run main.go 
+ 1095  pushd ..
+ 1096  git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+ 1097  export PATH=$PATH:`/media/rlm/My Passport/depot_tools`
+ 1098  export PATH=$PATH:`/media/rlm/My\ Passport/depot_tools`
+ 1099  popd
+ 1100  dirs
+ 1101  export GO111MODULE=on
+ 1102  go get github.com/deepch/RTSPtoWebRTC
+ 1103  source ~/.profile
+ 1104  export GO111MODULE=on
+ 1105  go get github.com/deepch/RTSPtoWebRTC
+ 1106  cd ~/go/src/github.com/deepch/RTSPtoWebRTC
+ 1107  ls
+ 1108  cd /usr/local/
+ 1109  cd ~
+ 1110  cd go
+ 1111  ls
+ 1112  ls bin/
+ 1113  cd bin/R
+ 1114  cd bin/
+ 1115  ls
+ 1116  go run .
+ 1117  cd ..
+ 1118  cd pkg/
+ 1119  ls
+ 1120  ls mod/
+ 1121  cd mod/github.com/
+ 1122  ls
+ 1123  go run .
+ 1124  cd deepch/
+ 1125  ls
+ 1126  cd \!r\!t\!s\!pto\!web\!r\!t\!c@v0.0.0-20210423104445-d49acb4e56db/
+ 1127  ls
+ 1128  go run .
+ 1129  export PATH=$PATH:'/media/rlm/My Passport/depot_tools'
+ 1130  mkdir webrtc
+ 1131  cd webrtc/
+ 1132  fetch --no-history webrtc 
+ 1133  gclient sync
+ 1134  ls
+ 1135  fetch --no-history webrtc 
+ 1136  git clone https://code.nap.av.it.pt/atcll/arc2-webapp.git
+ 1137  p3 app.py
+ 1138  npm i webrtc-streamer
+ 1139  ls
+ 1140  p3 app.py
+ 1141  code .
+ 1142  npm i peer
+ 1143  code.
+ 1144  code .
+ 1145  npm i express ejs socket.io
+ 1146  npm i uuid
+ 1147  npm i --save-dev nodemon
+ 1148  npm run devStart
+ 1149  git clone https://code.nap.av.it.pt/atcll/arc2-webapp.git
+ 1150  cd webrtc-streamer/
+ 1151  cd ..
+ 1152  ls
+ 1153  cd arc2-webapp/
+ 1154  ls
+ 1155  clear
+ 1156  ls
+ 1157  cd react_frontend/
+ 1158  ls
+ 1159  npm i express ejs socket.io
+ 1160  npm i uuid
+ 1161  npm i --save-dev nodemon
+ 1162  code .
+ 1163  npm run devStart
+ 1164  npm i -g peer
+ 1165  peerjs --port 3001
+ 1166  sudo npm run devStart
+ 1167  D
+ 1168  git clone https://github.com/WebDevSimplified/Zoom-Clone-With-WebRTC.git
+ 1169  npm run devStart
+ 1170  npm start
+ 1171  it
+ 1172  cvpn
+ 1173  git clone
+ 1174  git clone https://github.com/mpromonet/webrtc-streamer.git
+ 1175  cd webrtc-streamer/
+ 1176  pushd ..
+ 1177  git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+ 1178  export PATH=$PATH:'/media/rlm/My Passport/depot_tools'
+ 1179  popd
+ 1180  mkdir ../webrtc
+ 1181  pushd ../webrtc
+ 1182  fetch --no-history webrtc 
+ 1183  popd
+ 1184  cmake . && make
+ 1185  pushd ../webrtc
+ 1186  gn gen out/Release --args='is_debug=false'
+ 1187  ls
+ 1188  cd src/
+ 1189  ls
+ 1190  gn gen out/Release --args='is_debug=false'
+ 1191  ls out/
+ 1192  gn gen out/Release --args='is_debug=false'
+ 1193  ls
+ 1194  cd build
+ 1195  ls
+ 1196  cd linux/
+ 1197  ls
+ 1198  export PATH=$PATH:`/media/rlm/My Passport/depot_tools`
+ 1199  export PATH=$PATH:`/media/rlm/My\ Passport/depot_tools`
+ 1200  cd ../../../..
+ 1201  ls
+ 1202  cd depot_tools/
+ 1203  ls
+ 1204  export PATH=/media/rlm/My Passport/depot_tools:$PATH
+ 1205  export PATH=/media/rlm/My\ Passport/depot_tools:$PATH
+ 1206  cd ..
+ 1207  cd webrtc
+ 1208  ls
+ 1209  ll
+ 1210  cd ..
+ 1211  ..
+ 1212  cd /bin/
+ 1213  ls
+ 1214  cd ~
+ 1215  rc
+ 1216  cd /usr/bin/
+ 1217  sudo nano ~./bashrc
+ 1218  ls
+ 1219  rc
+ 1220  cd /media/
+ 1221  ls
+ 1222  cd rlm/My\ Passport/
+ 1223  cd depot_tools/
+ 1224  export PATH=$PATH:`/media/rlm/My\ Passport depot_tools`
+ 1225  export PATH=$PATH:`/media/rlm/My\ Passport/ depot_tools`
+ 1226  export PATH=$PATH:`/media/rlm/My\ Passport/depot_tools`
+ 1227  export PATH=$PATH:'/media/rlm/My\ Passport/depot_tools'
+ 1228  cd ..
+ 1229  cd webrtc
+ 1230  cd src/
+ 1231  gn gen out/Release --args='is_debug=false'
+ 1232  ls
+ 1233  echo $PATH
+ 1234  cd ..
+ 1235  ls
+ 1236  export PATH=$PATH:"/media/rlm/My\ Passport/depot_tools"
+ 1237  gn gen out/Release --args='is_debug=false'
+ 1238  cd src/
+ 1239  gn gen out/Release --args='is_debug=false'
+ 1240  export PATH=$PATH:"/media/rlm/My Passport/depot_tools"
+ 1241  gn gen out/Release --args='is_debug=false'
+ 1242  cd ..
+ 1243  ./build/install-build-deps.sh
+ 1244  cd src/
+ 1245  ./build/install-build-deps.sh
+ 1246  gn gen out/Release --args='is_debug=false'
+ 1247  it
+ 1248  dvpn
+ 1249  it
+ 1250  cvpn
+ 1251  ./webrtc-streamer -a -C config.json -N10 -o
+ 1252  ./webrtc-streamer rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
+ 1253  ./webrtc-streamer rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov  --redirects
+ 1254  it
+ 1255  cvpn
+ 1256  scp accidentNotifier.py root@10.0.23.187:~/tools
+ 1257  scp accidentNotifier.py root@10.0.22.187:~/tools
+ 1258  scp root@10.0.22.187:~/tools/payloads.pcap .
+ 1259  scp root@10.0.22.187:~/tools/arc-communications/v2x_router/test.txt .
+ 1260  scp root@10.0.22.187:~/tools/pacotesWlan0.pcap .
+ 1261  scp root@10.0.22.187:~/tools/pacWlan0.pcap .
+ 1262  scp root@10.0.22.187:~/tools/id100.pcap .
+ 1263  scp root@10.0.22.187:~/tools/id101.pcap .
+ 1264  scp root@10.0.22.187:~/tools/pacotes.pcap .
+ 1265  scp root@10.0.22.187:~/tools/pacotes100id.pcap .
+ 1266  scp root@10.0.22.187:~/tools/pacotes420id.pcap .
+ 1267  p3 app.py 
+ 1268  code .
+ 1269  source venv/bin/activate
+ 1270  p3 app.py 
+ 1271  exit
+ 1272  D
+ 1273  cd ProjectARC2/
+ 1274  D
+ 1275  git clone https://code.nap.av.it.pt/atcll/arc2-webapp.git
+ 1276  cd arc2-webapp/
+ 1277  ls
+ 1278  p3 app.py 
+ 1279  code .
+ 1280  cd react_frontend/
+ 1281  npm run build
+ 1282  ..
+ 1283  p3 app.py 
+ 1284  cd react_frontend/
+ 1285  npm run build
+ 1286  ps aux
+ 1287  clear
+ 1288  npm run build
+ 1289  ..
+ 1290  p3 app.py 
+ 1291  cd react_frontend/
+ 1292  npm run build
+ 1293  cd ..
+ 1294  p3 app.py 
+ 1295  cd react_frontend/
+ 1296  npm run build
+ 1297  cd ..
+ 1298  p3 app.py 
+ 1299  cd react_frontend/
+ 1300  npm run build
+ 1301  cd ..
+ 1302  p3 app.py 
+ 1303  cd react_frontend/
+ 1304  npm run build
+ 1305  cd ..
+ 1306  p3 app.py 
+ 1307  cd react_frontend/
+ 1308  npm run build
+ 1309  cd ..
+ 1310  p3 app.py 
+ 1311  cd react_frontend/
+ 1312  npm run build
+ 1313  cd ..
+ 1314  p3 app.py 
+ 1315  cd react_frontend/
+ 1316  npm run build
+ 1317  cd ..
+ 1318  p3 app.py 
+ 1319  cd react_frontend/
+ 1320  npm run build
+ 1321  ..
+ 1322  p3 app.py 
+ 1323  cd react_frontend/
+ 1324  npm run build
+ 1325  cd ..
+ 1326  p3 app.py 
+ 1327  cd react_frontend/
+ 1328  npm run build
+ 1329  p3 ../app.py 
+ 1330  npm run build
+ 1331  p3 ../app.py 
+ 1332  npm run build
+ 1333  p3 ../app.py 
+ 1334  npm run build
+ 1335  p3 ../app.py 
+ 1336  npm run build
+ 1337  p3 ../app.py 
+ 1338  npm run build
+ 1339  p3 ../app.py 
+ 1340  npm run build
+ 1341  D
+ 1342  git clone https://github.com/klaxa/mkvserver_mk2
+ 1343  cd mkvserver_mk2/
+ 1344  ls
+ 1345  make
+ 1346  ls
+ 1347  cat Makefile 
+ 1348  p3 app.py 
+ 1349  code .
+ 1350  cd react_frontend/
+ 1351  clear
+ 1352  npm run build
+ 1353  p3 app.py 
+ 1354  p3 ../app.py 
+ 1355  npm run build
+ 1356  p3 ../app.py 
+ 1357  npm run build
+ 1358  p3 ../app.py 
+ 1359  npm run build
+ 1360  p3 ../app.py 
+ 1361  npm run build
+ 1362  p3 ../app.py 
+ 1363  npm run build
+ 1364  p3 ../app.py 
+ 1365  npm run build
+ 1366  p3 ../app.py 
+ 1367  npm run build
+ 1368  p3 ../app.py 
+ 1369  npm run build
+ 1370  p3 ../app.py 
+ 1371  npm run build
+ 1372  p3 ../app.py 
+ 1373  npm run build
+ 1374  p3 ../app.py 
+ 1375  npm run build
+ 1376  p3 ../app.py 
+ 1377  npm run build
+ 1378  p3 ../app.py 
+ 1379  npm run build
+ 1380  p3 ../app.py 
+ 1381  npm run build
+ 1382  p3 ../app.py 
+ 1383  npm run build
+ 1384  p3 ../app.py 
+ 1385  npm run build
+ 1386  p3 ../app.py 
+ 1387  npm run build
+ 1388  p3 ../app.py 
+ 1389  npm run build
+ 1390  p3 ../app.py 
+ 1391  npm run build
+ 1392  p3 ../app.py 
+ 1393  npm run build
+ 1394  p3 ../app.py 
+ 1395  npm run build
+ 1396  p3 ../app.py 
+ 1397  npm run build
+ 1398  p3 ../app.py 
+ 1399  npm run build
+ 1400  p3 ../app.py 
+ 1401  npm run build
+ 1402  p3 ../app.py 
+ 1403  npm run build
+ 1404  p3 ../app.py 
+ 1405  npm run build
+ 1406  p3 ../app.py 
+ 1407  npm run build
+ 1408  p3 ../app.py 
+ 1409  npm run build
+ 1410  p3 ../app.py 
+ 1411  npm run build
+ 1412  p3 ../app.py 
+ 1413  D
+ 1414  git clone https://github.com/heyletscode/webrtc-videocall-javascript.git
+ 1415  cd webrtc-videocall-javascript/
+ 1416  clear
+ 1417  ls
+ 1418  node server.js 
+ 1419  vim server.js 
+ 1420  nano server.js 
+ 1421  cd sender/
+ 1422  ls
+ 1423  nano sender.js 
+ 1424  ..
+ 1425  cd receiver/
+ 1426  nano receiver.js 
+ 1427  ..
+ 1428  node server.js 
+ 1429  npm init
+ 1430  npm i websocket
+ 1431  node server.js 
+ 1432  code .
+ 1433  cd react_frontend/
+ 1434  npm run build
+ 1435  p3 ../app.py 
+ 1436  npm run build
+ 1437  p3 ../app.py 
+ 1438  npm run build
+ 1439  p3 ../app.py 
+ 1440  npm run build
+ 1441  p3 ../app.py 
+ 1442  npm run build
+ 1443  p3 ../app.py 
+ 1444  npm run build
+ 1445  p3 ../app.py 
+ 1446  npm run build
+ 1447  p3 ../app.py 
+ 1448  npm run build
+ 1449  p3 ../app.py 
+ 1450  npm run build
+ 1451  p3 ../app.py 
+ 1452  npm run build
+ 1453  p3 ../app.py 
+ 1454  npm run build
+ 1455  p3 ../app.py 
+ 1456  npm run build
+ 1457  p3 ../app.py 
+ 1458  npm run build
+ 1459  p3 ../app.py 
+ 1460  npm run build
+ 1461  p3 ../app.py 
+ 1462  npm run build
+ 1463  p3 ../app.py 
+ 1464  npm run build
+ 1465  p3 ../app.py 
+ 1466  npm run build
+ 1467  p3 ../app.py 
+ 1468  npm run build
+ 1469  p3 ../app.py 
+ 1470  npm run build
+ 1471  p3 ../app.py 
+ 1472  npm run build
+ 1473  p3 ../app.py 
+ 1474  npm run build
+ 1475  p3 ../app.py 
+ 1476  npm run build
+ 1477  p3 ../app.py 
+ 1478  npm run build
+ 1479  p3 ../app.py 
+ 1480  npm run build
+ 1481  p3 ../app.py 
+ 1482  npm run build
+ 1483  p3 ../app.py 
+ 1484  npm run build
+ 1485  p3 ../app.py 
+ 1486  npm run build
+ 1487  p3 ../app.py 
+ 1488  npm run build
+ 1489  p3 ../app.py 
+ 1490  npm run build
+ 1491  p3 ../app.py 
+ 1492  npm run build
+ 1493  p3 ../app.py 
+ 1494  ps aux
+ 1495  p3 ../app.py 
+ 1496  npm run build
+ 1497  p3 ../app.py 
+ 1498  cd ..
+ 1499  cd react_frontend/
+ 1500  </Container>
+ 1501  npm i react-webcam
+ 1502  npm run build
+ 1503  npm i react-webcam
+ 1504  p3 ../app.py 
+ 1505  npm i websocket
+ 1506  p3 ../app.py 
+ 1507  npm run build
+ 1508  p3 ../app.py 
+ 1509  npm run build
+ 1510  p3 ../app.py 
+ 1511  npm run build
+ 1512  p3 ../app.py 
+ 1513  npm run build
+ 1514  p3 ../app.py 
+ 1515  npm run build
+ 1516  p3 ../app.py 
+ 1517  npm run build
+ 1518  p3 ../app.py 
+ 1519  clear
+ 1520  npm run build
+ 1521  clear
+ 1522  p3 ../app.py 
+ 1523  npm run build
+ 1524  p3 ../app.py 
+ 1525  npm run build
+ 1526  p3 ../app.py 
+ 1527  npm run build
+ 1528  p3 ../app.py 
+ 1529  npm run build
+ 1530  p3 ../app.py 
+ 1531  npm run build
+ 1532  p3 ../app.py 
+ 1533  npm run build
+ 1534  p3 ../app.py 
+ 1535  npm run build
+ 1536  p3 ../app.py 
+ 1537  it
+ 1538  cvpn
+ 1539  git clone https://github.com/klaxa/mkvserver_mk2.git
+ 1540  cd mkvserver_mk2/
+ 1541  make
+ 1542  code .
+ 1543  dpkg -L ffmpeg
+ 1544  apt-file search libavformat.pc
+ 1545  sudo apt-get install libavformat-dev libavfilter-dev libavdevice-dev ffmpeg
+ 1546  make
+ 1547  ./server rtsp://atcll-p1-camera.nap.av.it.pt/11
+ 1548  ./server test.mp4
+ 1549  ./server rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
+ 1550  node server.js 
+ 1551  cd mkvserver_mk2/
+ 1552  ./server rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov
+ 1553  nc -l -p 12345 | ./server
+ 1554  ffmpeg -f x11grab -framerate 15 -s 1920x1080 -i :0.0 -c:v libx264 -f matroska tcp://remote:12345
+ 1555  ffmpeg -f x11grab -framerate 15 -s 1366x768 -i :0.0 -c:v libx264 -f matroska tcp://remote:12345
+ 1556  ffmpeg -f x11grab -framerate 15 -s 1366x768 -i default -c:v libx264 -f matroska tcp://remote:12345
+ 1557  ffmpeg -f x11grab -framerate 15 -s 1366x768 -probesize 10M -i :0.0 -c:v libx264 -f matroska tcp://remote:12345
+ 1558  ffmpeg -f x11grab -framerate 15 -s 1366x768 -i :0.0 -c:v libx264 -f matroska tcp://remote:12345
+ 1559  x SWL3 c/48 portas
+ 1560  p3 app.py 
+ 1561  npm i webrtc-streamer
+ 1562  code .
+ 1563  cd react_frontend/
+ 1564  npm i webrtc-streamer
+ 1565  code .
+ 1566  npm run build
+ 1567  npm i node-rtsp-stream
+ 1568  cd /tmp/
+ 1569  ls
+ 1570  D
+ 1571  git clone https://code.nap.av.it.pt/atcll/arc2-webapp.git
+ 1572  D
+ 1573  mkdir test
+ 1574  cd test
+ 1575  npm i node-rtsp-stream
+ 1576  code .
+ 1577  npm start
+ 1578  cd ws
+ 1579  ls
+ 1580  cd node_modules/
+ 1581  ls
+ 1582  cd ws/
+ 1583  node index.js 
+ 1584  node browser.js 
+ 1585  ..
+ 1586  cd node-rtsp-stream/
+ 1587  node index.js 
+ 1588  cd ..
+ 1589  npm i ws
+ 1590  cd react_frontend/
+ 1591  npm i node-rtsp-stream
+ 1592  code .
+ 1593  it
+ 1594  cvpn
+ 1595  ssh root@10.0.23.167
+ 1596  ssh root@10.0.2.162
+ 1597  ssh root@10.0.23.167
+ 1598  ssh root@10.0.23.162
+ 1599  scp root@10.0.23.162:~/tools/cenas.mp4
+ 1600  scp root@10.0.23.162:~/tools/cenas.mp4 .
+ 1601  D
+ 1602  git clone https://github.com/phoboslab/jsmpeg.git
+ 1603  cd jsmpeg/
+ 1604  D
+ 1605  cd arc2-webapp/
+ 1606  ls
+ 1607  cd react_frontend/
+ 1608  ls
+ 1609  npm run build
+ 1610  p3 ../app.py 
+ 1611  it
+ 1612  cpn
+ 1613  cvpn
+ 1614  ssh root@10.0.22.167
+ 1615  ssh root@10.0.23.167
+ 1616  ssh root@10.0.22.187
+ 1617  ssh root@10.0.23.162
+ 1618  p3 app.py 
+ 1619  doe .
+ 1620  code .
+ 1621  p3 app.py 
+ 1622  code .
+ 1623  cd react_frontend/
+ 1624  npm run build
+ 1625  p3 ../app.py 
+ 1626  npm run build
+ 1627  p3 ../app.py 
+ 1628  npm run build
+ 1629  p3 ../app.py 
+ 1630  npm run build
+ 1631  p3 ../app.py 
+ 1632  npm run build
+ 1633  p3 ../app.py 
+ 1634  npm run build
+ 1635  p3 ../app.py 
+ 1636  node app.py 
+ 1637  ls
+ 1638  cd react_frontend/
+ 1639  ls
+ 1640  cd src/views/examples/
+ 1641  node server.js 
+ 1642  etstat --tcp --programs --numeric | grep ssh
+ 1643  netstat --tcp --programs --numeric | grep ssh
+ 1644  ping 192.168.3.2
+ 1645  telnet 192.168.3.2:554
+ 1646  telnet 192.168.3.2
+ 1647  who am i
+ 1648  telnet 192.168.3.2
+ 1649  ffplay
+ 1650  ffplay -hide_banner 'rtsp://admin:itnap2021@192.168.3.2:554/cam/realmonitor?channel=1&subtype=1'
+ 1651  ffplay ffplay -rtsp_transport tcp -hide_banner 'rtsp://admin:itnap2021@192.168.3.2:554/cam/realmonitor?channel=1&subtype=1'
+ 1652  ffplay -rtsp_transport tcp -hide_banner 'rtsp://admin:itnap2021@192.168.3.2:554/cam/realmonitor?channel=1&subtype=1'
+ 1653  ffmpeg -i 'rtsp://admin:itnap2021@192.168.3.2:554/cam/realmonitor?channel=1&subtype=1'
+ 1654  telnet 192.168.3.2
+ 1655  ffmpeg -i 'rtsp://admin:itnap2021@192.168.3.2:554/cam/realmonitor?channel=1&subtype=1' t.mp4
+ 1656  ffmpeg -i 'rtsp://atcll-p1-camera.nap.av.it.pt/11' t.mp4
+ 1657  ffprobe 'rtsp://admin:itnap2021@10.0.23.162:554/cam/realmonitor?channel=1&subtype=1'
+ 1658  ffprobe 'rtsp://atcll-p1-camera.nap.av.it.pt/11'
+ 1659  ffprobe 'rtsp://admin:itnap2021@10.0.23.162:554/cam/realmonitor?channel=1&subtype=1'
+ 1660  ffprobe rtsp://admin:itnap2021@10.0.23.162:554/Streaming/Channels/101
+ 1661  ffplay -rtsp_transport tcp rtsp://10.0.23.162:554/rtsptunnel
+ 1662  ffprobe rtsp://admin:itnap2021@10.0.23.162:554/Streaming/Channels/101
+ 1663  ffplay -rtsp_transport tcp rtsp://10.0.23.162:554/rtsptunnel
+ 1664  ffplay -rtsp_transport tcp rtsp://atcll-p1-camera.nap.av.it.pt/11/rtsptunnel
+ 1665  ffplay -rtsp_transport tcp rtsp://10.0.23.162:554/rtsptunnel
+ 1666  ffplay -rtsp_transport tcp rtsp://atcll-p1-camera.nap.av.it.pt/11/rtsptunnel
+ 1667  ffplay -rtsp_transport tcp rtsp://10.0.23.162:554/rtsptunnel
+ 1668  ffplay -rtsp_transport tcp rtsp://admin:itnap2021@10.0.23.162:554/rtsptunnel
+ 1669  ffplay -rtsp_transport tcp rtsp://admin:itnap2021@192.168.3.2:554/rtsptunnel
+ 1670  ffplay -rtsp_transport tcp rtsp://admin:itnap2021@192.168.3.2:554/cam/realmonitor?channel=1&subtype=1/rtsptunnel
+ 1671  D
+ 1672  cd arc2-webapp/
+ 1673  ls
+ 1674  cd react_frontend/
+ 1675  ls
+ 1676  cd src/
+ 1677  ls
+ 1678  node app.js 
+ 1679  ..
+ 1680  cd arc2-webapp/
+ 1681  p3 app.py 
+ 1682  sudo iptables -L -n
+ 1683  ssh root@10.0.23.162
+ 1684  ps aux
+ 1685  clear
+ 1686  ffplay -rtsp_transport tcp rtsp://admin:itnap2021@192.168.3.2:554/rtsptunnel
+ 1687  ffplay -rtsp_transport tcp rtsp://10.0.23.162:554/rtsptunnel
+ 1688  scp root@10.0.23.162:~/tools/port.pcap
+ 1689  scp root@10.0.23.162:~/tools/port.pcap .
+ 1690  ffplay -rtsp_transport tcp rtsp://admin:itnap2021@10.0.23.162:554/rtsptunnel
+ 1691  scp root@10.0.23.162:~/tools/port.pcap .
+ 1692  it
+ 1693  dvpn
+ 1694  code .
+ 1695  ls
+ 1696  p3 app.py 
+ 1697  cd react_frontend/src/views/
+ 1698  ls
+ 1699  cd examples/
+ 1700  ll
+ 1701  ..
+ 1702  ll
+ 1703  node app.js 
+ 1704  cd react_frontend/src/
+ 1705  ls
+ 1706  node app.js 
+ 1707  node client.js
+ 1708  ..
+ 1709  p3 app.py 
+ 1710  cd ..
+ 1711  ls
+ 1712  cd arc2-webapp/
+ 1713  ls
+ 1714  source venv/bin/activate
+ 1715  pip3 install gevent gevent-websocket
+ 1716  p3 app.py 
+ 1717  exit
+ 1718  D
+ 1719  cd arc2-webapp/
+ 1720  cd react_frontend/src/
+ 1721  node app.js 
+ 1722  node client.js 
+ 1723  ..
+ 1724  npm i socket.io
+ 1725  cd src/
+ 1726  node client.js 
+ 1727  ..
+ 1728  npm i socket.io-client
+ 1729  cd src/
+ 1730  node client.js 
+ 1731  ..
+ 1732  p3 app.py 
+ 1733  ps aux
+ 1734  kill 31246
+ 1735  ps aux
+ 1736  kill -9 31246
+ 1737  ps aux
+ 1738  p3 app.py 
+ 1739  ps aux
+ 1740  p3 app.py 
+ 1741  ls
+ 1742  cd react_frontend/src/
+ 1743  node client.js 
+ 1744  it
+ 1745  cvpn
+ 1746  p3 app.py 
+ 1747  code .
+ 1748  p3 app.py 
+ 1749  cd react_frontend/src/
+ 1750  node app.js 
+ 1751  it
+ 1752  dvpn
+ 1753  cvpn
+ 1754  dvpn
+ 1755  it
+ 1756  cvpn
+ 1757  ssh root@10.0.22.167
+ 1758  ssh root@10.0.23.167
+ 1759  ssh root@10.0.23.162
+ 1760  it
+ 1761  dvpn
+ 1762  dpkg --list
+ 1763  sudp apt-get remove teams
+ 1764  sudo apt-get remove teams
+ 1765  it
+ 1766  cvpn
+ 1767  dvpn
+ 1768  cd react_frontend/src/
+ 1769  node client.js 
+ 1770  ..
+ 1771  npm run build
+ 1772  ls
+ 1773  cd src/
+ 1774  clear
+ 1775  node client.js 
+ 1776  ..
+ 1777  npm run build
+ 1778  cd src/
+ 1779  node client.js 
+ 1780  D
+ 1781  cd arc2-webapp/
+ 1782  ls
+ 1783  p3 app.py 
+ 1784  clear
+ 1785  p3 app.py 
+ 1786  d
+ 1787  D
+ 1788  it
+ 1789  cvpn
+ 1790  cd arc2-webapp/
+ 1791  ls
+ 1792  p3 app.py 
+ 1793  it
+ 1794  cvpn
+ 1795  D
+ 1796  cd arc2-webapp/
+ 1797  ls
+ 1798  p3 app.py 
+ 1799  cd react_frontend/
+ 1800  npm run build
+ 1801  p3 ../app.py 
+ 1802  npm run build
+ 1803  p3 ../app.py 
+ 1804  cd react_frontend/src/
+ 1805  node client.js 
+ 1806  it
+ 1807  dvpn
+ 1808  history
+ 1809  ffplay -rtsp_transport tcp rtsp://atcll-p1-camera.nap.av.it.pt/11/rtsptunnel
+ 1810  ffplay -rtsp_transport tcp rtsp://admin:itnap2021@192.168.3.2:554/cam/realmonitor?channel=1&subtype=1/rtsptunnel
+ 1811  qq
+ 1812  q
+ 1813  it
+ 1814  cvpn
+ 1815  ssh root@10.0.23.167
+ 1816  ssh root@10.0.23.162
+ 1817  ping 10.0.23.162
+ 1818  history
+ 1819  cd src/
+ 1820  node client.js 
+ 1821  cd src/
+ 1822  node client.js 
+ 1823  D
+ 1824  cd arc2-webapp/
+ 1825  cd react_frontend/
+ 1826  npm run build
+ 1827  p3 ../app.py 
+ 1828  npm run build
+ 1829  p3 ../app.py 
+ 1830  npm run build
+ 1831  p3 ../app.py 
+ 1832  npm run build
+ 1833  p3 ../app.py 
+ 1834  npm run build
+ 1835  p3 ../app.py 
+ 1836  npm run build
+ 1837  p3 ../app.py 
+ 1838  D
+ 1839  cd arc2-webapp/
+ 1840  p3 app.py 
+ 1841  cd react_frontend/
+ 1842  npm run build
+ 1843  p3 ../app.py 
+ 1844  npm run build
+ 1845  p3 ../app.py 
+ 1846  npm run build
+ 1847  p3 ../app.py 
+ 1848  npm run build
+ 1849  p3 ../app.py 
+ 1850  D
+ 1851  cd arc2-webapp/
+ 1852  p3 app.py 
+ 1853  D
+ 1854  cd arc2-webapp/
+ 1855  cd react_frontend/
+ 1856  npm start
+ 1857  echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+ 1858  npm start
+ 1859  npm run build
+ 1860  p3 ../app.py 
+ 1861  npm run build
+ 1862  p3 ../app.py 
+ 1863  npm run build
+ 1864  p3 ../app.py 
+ 1865  npm run build
+ 1866  p3 ../app.py 
+ 1867  npm run build
+ 1868  p3 ../app.py 
+ 1869  npm run build
+ 1870  p3 ../app.py 
+ 1871  npm run build
+ 1872  p3 ../app.py 
+ 1873  npm run build
+ 1874  p3 ../app.py 
+ 1875  npm run build
+ 1876  p3 ../app.py 
+ 1877  npm run build
+ 1878  p3 ../app.py 
+ 1879  it
+ 1880  cvpn
+ 1881  D
+ 1882  cd arc2-webapp/
+ 1883  cd react_frontend/
+ 1884  npm run build
+ 1885  p3 ../app.py 
+ 1886  npm run build
+ 1887  p3 ../app.py 
+ 1888  npm run build
+ 1889  p3 ../app.py 
+ 1890  npm run build
+ 1891  p3 ../app.py 
+ 1892  npm run build
+ 1893  p3 ../app.py 
+ 1894  npm run build
+ 1895  p3 ../app.py 
+ 1896  npm run build
+ 1897  p3 ../app.py 
+ 1898  npm run build
+ 1899  p3 ../app.py 
+ 1900  npm run build
+ 1901  p3 ../app.py 
+ 1902  npm run build
+ 1903  p3 ../app.py 
+ 1904  npm run build
+ 1905  p3 ../app.py 
+ 1906  npm run build
+ 1907  p3 ../app.py 
+ 1908  npm run build
+ 1909  p3 ../app.py 
+ 1910  npm run build
+ 1911  p3 ../app.py 
+ 1912  npm run build
+ 1913  p3 ../app.py 
+ 1914  npm run build
+ 1915  p3 ../app.py 
+ 1916  clear
+ 1917  npm run build
+ 1918  p3 ../app.py 
+ 1919  npm run build
+ 1920  p3 ../app.py 
+ 1921  npm run build
+ 1922  p3 ../app.py 
+ 1923  npm run build
+ 1924  p3 ../app.py 
+ 1925  npm run build
+ 1926  p3 ../app.py 
+ 1927  npm run build
+ 1928  p3 ../app.py 
+ 1929  npm run build
+ 1930  p3 ../app.py 
+ 1931  npm run build
+ 1932  p3 ../app.py 
+ 1933  cd src/
+ 1934  node client.js 
+ 1935  it
+ 1936  cvpn
+ 1937  dvpn
+ 1938  top
+ 1939  htop
+ 1940  sudo apt install htop
+ 1941  htop
+ 1942  atop
+ 1943  cat /etc/sysctl.conf
+ 1944  echo fs.inotify.max_user_watches=8192 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+ 1945  htop
+ 1946  it
+ 1947  cvpn
+ 1948  ssh 10.0.23.162
+ 1949  ssh root@10.0.23.162
+ 1950  git status
+ 1951  cd flask_backend/
+ 1952  git add database/
+ 1953  git commit -m "DB fix"
+ 1954  git push
+ 1955  git status
+ 1956  .
+ 1957  ..
+ 1958  git status
+ 1959  git add -A
+ 1960  git commit -m "Livestream button fix"
+ 1961  git push
+ 1962  history
+ 1963  history > a

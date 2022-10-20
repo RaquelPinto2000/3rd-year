@@ -1,0 +1,9 @@
+p3/Jetson/Radar {"long": -8.656858, "lat": 40.636810, "speed": 0.0, "heading": -141.95399999999998, "length": 14.0, "car_id": 70, "Timestamp": 1618166307.317333, "class": 5}
+p3/Jetson/Radar {"long":  -8.660823, "lat": 40.634228, "speed": 0.0, "heading": -141.95399999999998, "length": 14.0, "car_id": 99, "Timestamp": 1618166307.317333, "class": 5}
+p3/Jetson/Radar {"long":  -8.700823, "lat": 40.704228, "speed": 0.0, "heading": -141.95399999999998, "length": 14.0, "car_id": 120, "Timestamp": 1618166307.317333, "class": 5}
+p3/Jetson/Radar {"long":  -8.700823, "lat": 40.754228, "speed": 0.0, "heading": -141.95399999999998, "length": 14.0, "car_id": 120, "Timestamp": 1618166307.317333, "class": 5}
+p3/Jetson/Radar {"long":  -8.700823, "lat": 40.804228, "speed": 0.0, "heading": -141.95399999999998, "length": 14.0, "car_id": 120, "Timestamp": 1618166307.317333, "class": 5}
+p3/Jetson/Radar {"long":  -8.700823, "lat": 40.854228, "speed": 0.0, "heading": -141.95399999999998, "length": 14.0, "car_id": 120, "Timestamp": 1618166307.317333, "class": 5}
+p3/Jetson/Radar {"long":  -8.700823, "lat": 40.904228, "speed": 0.0, "heading": -141.95399999999998, "length": 14.0, "car_id": 120, "Timestamp": 1618166307.317333, "class": 5}
+p3/Jetson/Radar {"long":  -8.700823, "lat": 40.954228, "speed": 0.0, "heading": -141.95399999999998, "length": 14.0, "car_id": 120, "Timestamp": 1618166307.317333, "class": 5}
+p3/Jetson/Radar {"long":  -8.700823, "lat": 40.994228, "speed": 0.0, "heading": -141.95399999999998, "length": 14.0, "car_id": 120, "Timestamp": 1618166307.317333, "class": 5}

@@ -1,0 +1,92 @@
+p3/Jetson/Radar {"long": -8.65766407580508, "lat": 40.64149888554696, "speed": 0.0, "heading": -141.95399999999998, "length": 14.0, "car_id": 3, "Timestamp": 1618166306.340504, "class": 2}
+p3/Jetson/Radar {"long": -8.65766407580508, "lat": 40.64149888554696, "speed": 0.0, "heading": -141.95399999999998, "length": 14.0, "car_id": 3, "Timestamp": 1618166306.415858, "class": 2}
+p3/Jetson/Radar {"long": -8.65766407580508, "lat": 40.64149888554696, "speed": 0.0, "heading": -141.95399999999998, "length": 14.0, "car_id": 3, "Timestamp": 1618166306.570867, "class": 2}
+p3/Jetson/Radar {"long": -8.65766407580508, "lat": 40.64149888554696, "speed": 0.0, "heading": -141.95399999999998, "length": 14.0, "car_id": 3, "Timestamp": 1618166306.643825, "class": 2}
+p3/Jetson/Radar {"long": -8.65766407580508, "lat": 40.64149888554696, "speed": 0.0, "heading": -141.95399999999998, "length": 14.0, "car_id": 3, "Timestamp": 1618166306.792468, "class": 2}
+p3/Jetson/Radar {"long": -8.65766407580508, "lat": 40.64149888554696, "speed": 0.0, "heading": -141.95399999999998, "length": 14.0, "car_id": 3, "Timestamp": 1618166306.869327, "class": 2}
+p3/Jetson/Radar {"long": -8.65766407580508, "lat": 40.64149888554696, "speed": 0.0, "heading": -141.95399999999998, "length": 14.0, "car_id": 3, "Timestamp": 1618166306.940146, "class": 2}
+p3/Jetson/Radar {"long": -8.65766407580508, "lat": 40.64149888554696, "speed": 0.0, "heading": -141.95399999999998, "length": 14.0, "car_id": 3, "Timestamp": 1618166307.01509, "class": 2}{'Timestamp': 1618672042.988499, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341818, 'longitude': -8.6599306, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672042.0, 'n_cars': '1', 'speed': '0.1'}
+{'Timestamp': 1618672042.988499, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341818, 'longitude': -8.6599306, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672044.992937, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341836, 'longitude': -8.6599295, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.2, 'RSSI': -88}
+{'Timestamp': 1618672044.992937, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341836, 'longitude': -8.6599295, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.2, 'RSSI': -88}
+{'Timestamp': 1618672044.0, 'n_cars': '1', 'speed': '0.2'}
+{'Timestamp': 1618672045.995277, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341855, 'longitude': -8.6599291, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.2, 'RSSI': -88}
+{'Timestamp': 1618672045.995277, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341855, 'longitude': -8.6599291, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.2, 'RSSI': -88}
+{'Timestamp': 1618672045.0, 'n_cars': '1', 'speed': '0.2'}
+{'Timestamp': 1618672046.997376, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341861, 'longitude': -8.6599293, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672046.997376, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341861, 'longitude': -8.6599293, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672046.0, 'n_cars': '1', 'speed': '0.0'}
+{'Timestamp': 1618672048.0, 'OBU_ID': '721', 'class': 5, 'latitude': 40.634186, 'longitude': -8.6599298, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672048.0, 'OBU_ID': '721', 'class': 5, 'latitude': 40.634186, 'longitude': -8.6599298, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672049.002501, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341858, 'longitude': -8.6599299, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672049.002501, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341858, 'longitude': -8.6599299, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672048.0, 'n_cars': '1', 'speed': '0.0'}
+{'Timestamp': 1618672050.004876, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341866, 'longitude': -8.6599296, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672050.004876, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341866, 'longitude': -8.6599296, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672049.0, 'n_cars': '1', 'speed': '0.1'}
+{'Timestamp': 1618672051.006881, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341873, 'longitude': -8.6599293, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672051.006881, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341873, 'longitude': -8.6599293, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672050.0, 'n_cars': '1', 'speed': '0.1'}
+{'Timestamp': 1618672051.0, 'n_cars': '1', 'speed': '0.0'}
+{'Timestamp': 1618672053.013885, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341896, 'longitude': -8.6599278, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672053.013885, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341896, 'longitude': -8.6599278, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618671989.0, 'vehicle_l': 0, 'speed_vl': 0, 'vehicle_h': 0, 'speed_vh': 0, 'others': 0, 'speed_o': 0}
+{'Timestamp': 1618671989.0, 'vehicle_l': 0, 'speed_vl': 0.0, 'vehicle_h': 0, 'speed_vh': 0.0, 'others': 0, 'speed_o': 0.0}
+{'Timestamp': 1618672053.0, 'n_cars': '1', 'speed': '0.0'}
+{'Timestamp': 1618672056.018041, 'OBU_ID': '721', 'class': 5, 'latitude': 40.634191, 'longitude': -8.6599278, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672056.018041, 'OBU_ID': '721', 'class': 5, 'latitude': 40.634191, 'longitude': -8.6599278, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672057.020592, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341916, 'longitude': -8.6599275, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672057.020592, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341916, 'longitude': -8.6599275, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672056.0, 'n_cars': '1', 'speed': '0.1'}
+{'Timestamp': 1618672058.023155, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341921, 'longitude': -8.6599266, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672058.023155, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341921, 'longitude': -8.6599266, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672057.0, 'n_cars': '1', 'speed': '0.1'}
+{'Timestamp': 1618672058.0, 'n_cars': '1', 'speed': '0.1'}
+{'Timestamp': 1618672060.027671, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341945, 'longitude': -8.6599261, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.2, 'RSSI': -88}
+{'Timestamp': 1618672060.027671, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6341945, 'longitude': -8.6599261, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.2, 'RSSI': -88}
+{'Timestamp': 1618672060.0, 'n_cars': '1', 'speed': '0.2'}
+{'Timestamp': 1618672067.044054, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342016, 'longitude': -8.6599225, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672067.044054, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342016, 'longitude': -8.6599225, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672067.0, 'n_cars': '1', 'speed': '0.1'}
+{'Timestamp': 1618672070.050038, 'OBU_ID': '721', 'class': 5, 'latitude': 40.634205, 'longitude': -8.6599205, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672070.050038, 'OBU_ID': '721', 'class': 5, 'latitude': 40.634205, 'longitude': -8.6599205, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672071.053337, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342056, 'longitude': -8.65992, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672071.053337, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342056, 'longitude': -8.65992, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672070.0, 'n_cars': '1', 'speed': '0.0'}
+{'Timestamp': 1618672072.056039, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342056, 'longitude': -8.6599198, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672072.056039, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342056, 'longitude': -8.6599198, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672071.0, 'n_cars': '1', 'speed': '0.1'}
+{'Timestamp': 1618672072.0, 'n_cars': '1', 'speed': '0.1'}
+{'Timestamp': 1618672074.060243, 'OBU_ID': '721', 'class': 5, 'latitude': 40.634207, 'longitude': -8.6599188, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672074.060243, 'OBU_ID': '721', 'class': 5, 'latitude': 40.634207, 'longitude': -8.6599188, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672074.0, 'n_cars': '1', 'speed': '0.1'}
+{'Timestamp': 1618672079.072123, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342085, 'longitude': -8.6599141, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672079.072123, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342085, 'longitude': -8.6599141, 'altitude': 0.23, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672079.0, 'n_cars': '1', 'speed': '0.0'}
+{'Timestamp': 1618672081.077581, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342088, 'longitude': -8.659913, 'altitude': 0.24, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672081.077581, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342088, 'longitude': -8.659913, 'altitude': 0.24, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672082.078911, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342088, 'longitude': -8.6599126, 'altitude': 0.24, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672082.078911, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342088, 'longitude': -8.6599126, 'altitude': 0.24, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672081.0, 'n_cars': '1', 'speed': '0.1'}
+{'Timestamp': 1618672083.081027, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342091, 'longitude': -8.659913, 'altitude': 0.24, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672083.081027, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342091, 'longitude': -8.659913, 'altitude': 0.24, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672082.0, 'n_cars': '1', 'speed': '0.0'}
+{'Timestamp': 1618672084.083038, 'OBU_ID': '721', 'class': 5, 'latitude': 40.63421, 'longitude': -8.6599128, 'altitude': 0.24, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672084.083038, 'OBU_ID': '721', 'class': 5, 'latitude': 40.63421, 'longitude': -8.6599128, 'altitude': 0.24, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672083.0, 'n_cars': '1', 'speed': '0.0'}
+{'Timestamp': 1618672084.0, 'n_cars': '1', 'speed': '0.0'}
+{'Timestamp': 1618672086.086883, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342115, 'longitude': -8.6599116, 'altitude': 0.24, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672086.086883, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342115, 'longitude': -8.6599116, 'altitude': 0.24, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672086.0, 'n_cars': '1', 'speed': '0.0'}
+{'Timestamp': 1618672088.092641, 'OBU_ID': '721', 'class': 5, 'latitude': 40.634213, 'longitude': -8.6599109, 'altitude': 0.24, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672088.092641, 'OBU_ID': '721', 'class': 5, 'latitude': 40.634213, 'longitude': -8.6599109, 'altitude': 0.24, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672089.095562, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342131, 'longitude': -8.6599113, 'altitude': 0.24, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672089.095562, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342131, 'longitude': -8.6599113, 'altitude': 0.24, 'heading': 360.1, 'speed': 0.1, 'RSSI': -88}
+{'Timestamp': 1618672088.0, 'n_cars': '1', 'speed': '0.1'}
+{'Timestamp': 1618672089.0, 'n_cars': '1', 'speed': '0.1'}
+{'Timestamp': 1618672091.099033, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342145, 'longitude': -8.6599123, 'altitude': 0.24, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672091.099033, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342145, 'longitude': -8.6599123, 'altitude': 0.24, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672091.0, 'n_cars': '1', 'speed': '0.0'}
+{'Timestamp': 1618672093.103905, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342153, 'longitude': -8.6599125, 'altitude': 0.24, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}
+{'Timestamp': 1618672093.103905, 'OBU_ID': '721', 'class': 5, 'latitude': 40.6342153, 'longitude': -8.6599125, 'altitude': 0.24, 'heading': 360.1, 'speed': 0.0, 'RSSI': -88}

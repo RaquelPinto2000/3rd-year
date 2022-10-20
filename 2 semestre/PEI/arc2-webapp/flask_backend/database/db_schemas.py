@@ -1,0 +1,92 @@
+from flask_backend import ma
+from flask_backend.database.db_models import Accident, Ambulance, Car, User, Camera
+
+class CarSchema(ma.SQLAlchemySchema):
+    class Meta:
+        model = Car
+    
+    velocity = ma.auto_field()
+    n_people = ma.auto_field()
+    temperature = ma.auto_field()
+    airbag = ma.auto_field()
+    ABS = ma.auto_field()
+    hazard_ligths = ma.auto_field()
+    overturned = ma.auto_field()
+    damage = ma.auto_field()
+    accident_id = ma.auto_field()
+
+class AccidentSchema(ma.SQLAlchemySchema):
+    class Meta:
+        model = Accident
+
+    id = ma.auto_field()
+    video_id = ma.auto_field()
+    location = ma.auto_field()
+    n_cars_involved = ma.auto_field()
+    n_people = ma.auto_field()
+    n_people_injured = ma.auto_field()
+    damage = ma.auto_field()
+    video_total = ma.auto_field()
+    date = ma.auto_field()
+    status = ma.auto_field()
+    fire = ma.auto_field()
+    city= ma.auto_field()
+    ambulance = ma.auto_field()
+    congested = ma.auto_field()
+    
+    cars = ma.Nested(CarSchema, many=True)
+
+class UserSchema(ma.SQLAlchemySchema):
+    class Meta:
+        model = User
+
+    id = ma.auto_field()
+    Username = ma.auto_field()
+    email = ma.auto_field()
+    password = ma.auto_field()
+    first_name = ma.auto_field()
+    last_name = ma.auto_field()
+    birth_date = ma.auto_field()
+    address = ma.auto_field()
+    city = ma.auto_field()
+    country = ma.auto_field()
+    postal_code = ma.auto_field()
+    telephone = ma.auto_field()
+    work_institution = ma.auto_field()
+    profession = ma.auto_field()
+    about = ma.auto_field()
+    role = ma.auto_field()
+    role_type = ma.auto_field()
+    last_login = ma.auto_field()
+
+class CameraSchema(ma.SQLAlchemySchema):
+    class Meta:
+        model = Camera
+
+    id = ma.auto_field()
+    latitude = ma.auto_field()
+    longitude = ma.auto_field()
+    linkRTSP = ma.auto_field()
+
+class AmbulanceSchema(ma.SQLAlchemySchema):
+    class Meta:
+        model = Ambulance
+
+    id_ambulance = ma.auto_field()
+    id_user = ma.auto_field()
+
+# init schema
+accident_schema = AccidentSchema()
+accidents_schema = AccidentSchema(many=True)
+
+car_schema = CarSchema()
+car_schemas = CarSchema(many=True)
+
+user_schema = UserSchema()
+users_schema = UserSchema(many=True)
+
+camera_schema = CameraSchema()
+cameras_schema = CameraSchema(many=True)
+
+ambulance_schema = AmbulanceSchema()
+ambulances_schema = AmbulanceSchema(many=True)
