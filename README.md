@@ -28,18 +28,13 @@
 
 
 #### BD: Developed with [Alexandre Oliveira](https://github.com/AlexOliZ) in 2021
-* [Project](https://github.com/RaquelPinto2000/Project_CR) - Accelerating palindrome checking and counting with a Hardware Coprocessor 
-    - Use Nexys 4, Vivado, Vitis, VHDL and C
+* [Project](https://github.com/RaquelPinto2000/3ano/tree/main/2%20semestre/BD/Pratica/Projeto) - Fórmula 1
+    - Use C#, C++ and SQL
 
 #### IHC: Developed with [Lúcia Sousa](https://github.com/luciasousa), [Rodrigo Martins](https://github.com/rodrigo740) in 2021
-* [Project](https://github.com/RaquelPinto2000/4ano/tree/main/2%20semestre/EGS/Pratica/Projeto)- Photography Course Application 
-    - Use Spring, MySQL, Flask, django, Postgre SQL, HTML5, Kubernets and Docker
+* [Project](https://github.com/RaquelPinto2000/4ano/tree/main/2%20semestre/EGS/Pratica/Projeto)- Bee in Control
+    - Use Android Studio and Java
 
 #### PEI: Developed with [Rodrigo Martins](https://github.com/rodrigo740), [Lúcia Sousa](https://github.com/luciasousa), [Rafael Dias](https://github.com/rafaeldsd) and [Manuel Couto](https://github.com/coutooo) in 2021
-* [Project PEI](https://github.com/RaquelPinto2000/4ano/tree/main/2%20semestre/SD/Pratica/Assig1-project) - 
-    - Use React, MySQL, Flask, 
-
-
-
-
-https://github.com/coutooo
+* [Project PEI](https://github.com/RaquelPinto2000/4ano/tree/main/2%20semestre/SD/Pratica/Assig1-project) - V2X: Medical Emergency Service 2.0
+    - [Project Micro-site](https://github.com/RaquelPinto2000/3ano/tree/main/2%20semestre/PEI/rodrigo740.github.io)

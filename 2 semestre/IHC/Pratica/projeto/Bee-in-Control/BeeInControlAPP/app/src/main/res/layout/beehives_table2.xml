@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="343dp"
+        android:layout_height="360dp"
+        android:stretchColumns="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:background="@color/yellow"
+                android:padding="3dip"
+                android:text="ID"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="2"
+                android:background="@color/yellow"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="Type"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Foxtrot" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:background="@color/yellow"
+                android:padding="3dip"
+                android:text="Number Hive Bodies"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="5"
+                android:background="@color/yellow"/>
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="Swarm Date"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="12/9/2018" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:background="@color/yellow"
+                android:padding="3dip"
+                android:text="Last Honey Harvest"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="20/7/2017"
+                android:background="@color/yellow"/>/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_drop">Sort by</string>
+    <string-array name="menu_sort">
+        <item>Sort by ID</item>
+        <item>Number of beehives</item>
+        <item>Date of the last honey harvest</item>
+    </string-array>
+</resources>

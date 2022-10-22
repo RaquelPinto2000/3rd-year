@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Tasks">
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:text="Add hive body to beehive 2 "
+            android:textColorHighlight="#FF9800"
+            android:textColorLink="#FF9800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:text="Give food to beehive 1"
+            android:textColorHighlight="#FF9800"
+            android:textColorLink="#FF9800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Apiary 2 tasks"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Apiary 3 tasks"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+        <CheckBox
+            android:id="@+id/checkBox7"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:text="Clean apiary"
+            android:textColorHighlight="#FF9800"
+            android:textColorLink="#FF9800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Apiary 1 tasks"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="32dp"
+            android:text="Check hive body 2 for damage"
+            android:textColorHighlight="#FF9800"
+            android:textColorLink="#FF9800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <CheckBox
+            android:id="@+id/checkBox8"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="36dp"
+            android:text="Add hive body"
+            android:textColorHighlight="#FF9800"
+            android:textColorLink="#FF9800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:text="Swap beehive cover"
+            android:textColorHighlight="#FF9800"
+            android:textColorLink="#FF9800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+
+        <CheckBox
+            android:id="@+id/checkBox9"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:text="Check the health of the bee queen"
+            android:textColorHighlight="#FF9800"
+            android:textColorLink="#FF9800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:text="Give 3L of food"
+            android:textColorHighlight="#FF9800"
+            android:textColorLink="#FF9800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
+        <CheckBox
+            android:id="@+id/checkBox10"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:text="Clean apiary"
+            android:textColorHighlight="#FF9800"
+            android:textColorLink="#FF9800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
