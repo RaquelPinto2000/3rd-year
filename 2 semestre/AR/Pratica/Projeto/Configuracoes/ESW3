@@ -1,0 +1,284 @@
+METER GATEWAYS E VLANS NOS SWITCHES ESW1 e ESW2 ... e depois é tudo layer 3 entre os switches ... 
+
+    show ip int brief
+    show ip route 
+
+
+vlan 2 -> admin 
+
+vlan 3 -> worker 
+
+vlan 4 -> wifi 
+
+vlan 5 -> dc 
+
+vlan 1 ->   10.9.0.0/24
+            2001:A:A:0880::/64
+
+vlan 100 -> 10.9.1.0/25
+            2001:A:A:0900::/64
+
+vlan 101 -> 10.9.1.128/25
+            2001:A:A:0920::/64
+
+ip worker   ip 10.0.16.70/24 10.0.16.1
+ip admin    ip 10.0.0.70/24 10.0.0.254
+ip wifi1    ip 10.4.0.70/24 10.4.0.1
+ip wifi2    ip 10.4.0.100/24 10.4.0.254
+______________________________________________________________________
+
+
+vlan database
+vlan 2 
+vlan 3 
+vlan 4
+vlan 5
+vlan 6
+vlan 100
+apply
+exit
+
+conf t 
+ip routing
+ipv6 unicast-routing
+
+router ospf 1
+router-id 3.3.3.3
+no passive-interface default
+passive-interface vlan 1
+passive-interface vlan 2
+passive-interface vlan 3
+passive-interface vlan 4
+passive-interface vlan 5
+passive-interface vlan 6
+no passive-interface vlan 100
+
+ipv6 router ospf 1
+router-id 3.3.3.3
+no passive-interface default
+passive-interface vlan 1
+passive-interface vlan 4
+no passive-interface vlan 100
+
+
+int f0/0 
+ipv6 enable
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+ip address 10.7.0.5 255.255.255.252
+ipv6 address 2001:A:A:0701::1/126
+no shutdown 
+
+int f0/1 
+ipv6 enable
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+ip address 10.7.0.9 255.255.255.252
+ipv6 address 2001:A:A:0702::1/126
+no shutdown 
+
+int f1/2 
+no switchport
+ipv6 enable
+ip address 10.7.0.253 255.255.255.252
+ipv6 address 2001:A:A:0700::1/126
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shutdown 
+
+int f1/1
+no switchport
+ip ospf 1 area 0
+ip address 192.168.10.1 255.255.255.0
+no shutdown
+
+int f1/5
+switchport
+no ip address
+switchport mode trunk
+switchport trunk encapsulation dot1q
+switchport trunk allowed vlan 1,4,6,100,1002-1005
+no shutdown
+
+int f1/6
+switchport 
+no ip address 
+switchport mode trunk
+switchport trunk encapsulation dot1q
+switchport trunk allowed vlan 1,4,6,100,1002-1005
+no shutdown
+
+
+int f1/3
+switchport 
+no ip address
+switchport mode trunk
+switchport trunk encapsulation dot1q
+switchport trunk allowed vlan 1,4,6,100,1002-1005
+no shutdown
+
+
+int f1/4
+switchport 
+no ip address
+switchport mode trunk
+switchport trunk encapsulation dot1q
+switchport trunk allowed vlan 1,4,6,100,1002-1005
+no shutdown
+
+
+interface vlan 1
+ipv6 enable
+ip address 10.9.0.2 255.255.255.0
+ipv6 address 2001:A:A:0880::2/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no autostate 
+no shutdown
+
+interface vlan 2
+ipv6 enable
+ip address 10.0.0.2 255.255.255.0
+ipv6 address 2001:A:A:0000::2/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no autostate 
+no shutdown
+
+
+interface vlan 3
+ipv6 enable
+ip address 10.0.16.2 255.255.255.0
+ipv6 address 2001:A:A:0010::2/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no autostate 
+no shutdown
+
+interface vlan 4
+ipv6 enable
+ip address 10.4.0.2 255.255.255.0
+ipv6 address 2001:A:A:0400::2/64
+ipv6 ospf 1 area 0
+ip ospf 1 area 0
+no autostate 
+no shutdown
+
+interface vlan 5
+ipv6 enable 
+ip address 200.1.0.1 255.255.255.128
+ip address 10.5.113.1 255.255.255.0 secondary
+ipv6 address 2001:A:A:0571::1/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no autostate 
+no shutdown
+
+interface vlan 100
+ipv6 enable
+ip address 10.9.1.1 255.255.255.128
+ipv6 address 2001:A:A:0900::1/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no autostate 
+no shutdown
+
+interface range f1/5 - 6
+channel-group 1 mode on
+switchport mode trunk
+switchport trunk encapsulation dot1q
+switchport trunk allowed vlan 1,4,5,100,1002-1005
+interface Port-channel 1
+switchport mode trunk
+switchport mode trunk
+switchport trunk encapsulation dot1q
+switchport trunk allowed vlan 1,4,5,100,1002-1005
+no shutdown
+
+
+interface f1/15
+no switchport
+ipv6 enable 
+ip address 10.7.0.25 255.255.255.252
+ipv6 address 2001:A:A:0702::1D/126
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shutdown
+
+crypto isakmp policy 30
+authentication pre-share
+crypto isakmp key labcom address 10.8.0.2
+crypto ipsec transform-set authT ah-sha-hmac
+crypto ipsec transform-set cipherT esp-des
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
+crypto ipsec profile ARipsec
+set transform-set authT cipherT auth_ciphT
+
+interface Tunnel 0 
+ip unnumbered FastEthernet1/15
+tunnel source 10.7.0.25
+tunnel destination 10.8.0.2
+tunnel mode ipsec ipv4 
+tunnel protection ipsec profile ARipsec
+no shutdown
+
+ip route 10.40.0.0 255.255.255.0 Tunnel 0 10.7.0.26
+ip route 10.8.0.0 255.255.255.252 10.7.0.26
+ip route 10.40.0.0 255.255.255.0 10.7.0.26
+
+access-list 100 permit ip 10.8.32.0 0.0.0.255 10.40.0.0 0.0.0.255 
+access-list 101 permit ip any 10.40.0.0 0.0.0.255
+access-list 102 permit ip any 10.7.0.24 0.0.0.3
+
+
+route-map routeT0 permit 10
+match ip address 100
+set interface Tunnel 0
+
+interface vlan 6
+ip policy route-map routeT0
+ipv6 enable 
+ip address 10.8.32.254 255.255.255.0
+ipv6 address 2001:A:A:0820::FFFE/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no autostate 
+no shutdown 
+
+snmp-server community public route
+
+snmp-server community myrouter1 RW
+
+no snmp-server community public RO
+snmp-server community myrouter0 RO 10
+
+snmp-server view myview system included
+snmp-server community myrouter0 view myview RO 10
+
+
+end
+write 
+
+interface Tunnel 0
+ip unnumbered FastEthernet1/15
+
+
+interface vlan 5
+ip address 200.1.0.100 255.255.255.128
+ip address 10.5.113.100 255.255.255.0 secondary  
+ip ospf 1 area 0
+ipv6 address 2001:A:A:571::100/64 
+ipv6 enable 
+ipv6 ospf 1 area 0
+no shutdown
+no autostate
+
+interface vlan 5
+ip address 200.1.0.99 255.255.255.128
+ip address 10.5.113.99 255.255.255.0 secondary  
+ip ospf 1 area 0
+ipv6 address 2001:A:A:571::99/64 
+ipv6 enable 
+ipv6 ospf 1 area 0
+no shutdown
+no autostate

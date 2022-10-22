@@ -7,7 +7,7 @@
     - Use HTML, JavaScript, CSS, MYSQL, Flask, Visual Paradigm
 
 #### FR: Developed with [Lúcia Sousa](https://github.com/luciasousa) in 2020
-* [Project](https://github.com/RaquelPinto2000/3ano/tree/main/1%20semestre/FR/pratica/mini-projeto/Projeto_FR) - : Definition of the IPv4 and IPv6 addressing scheme of a business network. Configure the company communication network
+* [Project](https://github.com/RaquelPinto2000/3ano/tree/main/1%20semestre/FR/pratica/mini-projeto/Projeto_FR) - Definition of the IPv4 and IPv6 addressing scheme of a business network. Configure the company communication network
     - Use GNS3
 
 #### IIA: Developed with [Lúcia Sousa](https://github.com/luciasousa) and [Rodrigo Martins](https://github.com/rodrigo740) in 2020
@@ -23,7 +23,7 @@
 ## Projects of the 2nd semester
 
 #### AR: Developed with [Alexandre Oliveira](https://github.com/AlexOliZ) in 2021
-* [Project](https://github.com/RaquelPinto2000/3ano/tree/main/1%20semestre/FR/pratica/mini-projeto/Projeto_FR) - : Definition of the IPv4 and IPv6 addressing scheme of a business network. Configure the company communication network
+* [Project](https://github.com/RaquelPinto2000/3ano/tree/main/2%20semestre/AR/Pratica/Projeto) - Executar o desenho técnico, configurar e testar uma rede de telecomunicações de uma empresa de média/grande dimensão
     - Use GNS3
 
 

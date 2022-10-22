@@ -1,0 +1,125 @@
+-- allowed vlans 
+-- vlan 6
+
+
+conf t 
+ip routing 
+ipv6 unicast-routing
+
+router ospf 1
+router-id 11.11.11.11
+
+ipv6 router ospf 1
+router-id 11.11.11.11
+
+crypto isakmp policy 30
+authentication pre-share
+crypto isakmp key labcom address 10.8.0.2
+crypto ipsec transform-set authT ah-sha-hmac
+crypto ipsec transform-set cipherT esp-des
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
+crypto ipsec profile ARipsec
+set transform-set authTcipherTauth_ciphT
+
+interface f0/0
+ipv6 enable
+ip address 10.8.0.1 255.255.255.0
+ipv6 address 2001:A:A:0800::1/64
+no shutdown
+
+interface f0/1
+ipv6 enable
+ip address 10.7.0.26 255.255.255.252
+ipv6 address 2001:A:A:0702::1E/126
+no shutdown
+
+interface f1/0
+ip address 10.7.0.30 255.255.255.252
+no shutdown
+
+ip route 10.8.32.0 255.255.255.0 10.8.0.2
+ip route 10.7.0.24 255.255.255.252 10.8.0.2
+ip route 10.39.0.0 255.255.255.0 10.7.0.25
+ip route 10.40.0.0 255.255.255.0 10.8.0.1
+ip route 10.8.32.0 255.255.255.0 10.7.0.25
+
+end 
+write 
+
+
+
+
+access-list 101 permit ip any 10.39.0.0 0.0.0.255
+access-list 102 permit ip any 10.8.0.2 0.0.0.3
+
+access-list 103 permit ip any 10.7.0.24 0.0.0.3
+access-list 104 permit ip any 10.8.32.0 0.0.0.255
+
+route-map Send_Lisboa permit 10
+match ip address 101
+match ip address 102
+set ip next-hop 10.8.0.2
+
+route-map Send_Aveiro permit 10
+match ip address 103
+match ip address 104
+set ip next-hop 10.7.0.25
+
+
+
+
+
+
+
+
+route-map routeT0 permit 10
+match ip address 101
+match ip address 102
+set interface Tunnel 0
+
+
+ipv6 route 2001:A:A:2700::/64 Tunnel 1 2001:A:A:0800::2
+
+
+access-list 101 permit ip any 10.39.0.0 0.0.0.255
+access-list 102 permit ip any 10.8.0.0 0.0.0.3
+access-list 103 permit ip any 10.8.32.0 0.0.0.255
+access-list 104 permit ip any 10.7.0.24 0.0.0.3
+
+route-map ForceRouting permit 10
+match ip address 101
+match ip address 102
+set ip next-hop 10.8.32.254
+
+route-map Send_Antena permit 10
+match ip address 103
+match ip address 104
+set ip interface Tunnel 1
+
+interface Tunnel 0 
+ip unnumbered FastEthernet0/0 
+tunnel source 10.8.0.1
+tunnel destination 10.8.0.2
+tunnel mode ipsec ipv4 
+tunnel protection ipsec profile ARipsec
+ip ospf 1 area 0
+no shutdown
+
+
+interface Tunnel 1
+ipv6 unnumbered FastEthernet0/0 
+tunnel source 2001:A:A:0800::1
+tunnel destination 2001:A:A:0800::2
+tunnel mode ipsec ipv6
+ipv6 ospf 1 area 0
+tunnel protection ipsec profile ARipsec
+no shutdown
+
+interface Tunnel 2
+ip unnumbered FastEthernet0/1
+tunnel source 10.7.0.26
+tunnel destination 10.8.0.2
+tunnel mode ipsec ipv4 
+tunnel protection ipsec profile ARipsec
+ip ospf 1 area 0
+no shutdown

@@ -1,0 +1,143 @@
+configure terminal
+ip routing
+ipv6 unicast-routing
+router ospf 1
+router-id 2.2.2.2
+no passive-interface default
+default-information originate always
+ipv6 router ospf 1
+router-id 2.2.2.2
+no passive-interface default
+default-information originate always
+
+ip nat Stateful id 3
+backup 10.7.0.34
+peer 10.7.0.33
+mapping-id 10
+ip nat pool MYNATPOOL 200.1.0.128 200.1.0.190 netmask 255.255.255.192
+no ip nat inside source list 1 pool MYNATPOOL overload
+ip nat inside source list 1 pool MYNATPOOL mapping-id 10 overload
+access-list 2 permit 10.0.0.0 0.15.255.255 
+access-list 2 permit 200.1.0.0 0.0.0.127 
+ip nat inside source list 2 pool MYNATPOOL overload
+
+
+int f0/0
+ip nat outside
+ip address 192.0.0.5 255.255.255.252
+ipv6 address 2100:A:A:A::5/126
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shutdown
+
+ip route 0.0.0.0 0.0.0.0 Tunnel0 192.0.0.6
+ipv6 route ::/0 2100:A:A:A::6
+
+int f0/1
+ip policy route-map Send_Internet
+ipv6 policy route-map Send_Internet_V6
+ip nat inside
+ip address 10.7.0.14 255.255.255.252
+ipv6 address 2001:A:A:0703::2/126
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shutdown
+
+int f1/0
+ip policy route-map Send_Internet
+ipv6 policy route-map Send_Internet_V6
+ip nat inside
+ip address 10.7.0.10 255.255.255.252
+ipv6 address 2001:A:A:0702::2/126
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shutdown
+
+int f1/1
+ip policy route-map Send_Internet
+ipv6 policy route-map Send_Internet_V6
+ip nat inside
+ip address 10.7.0.34 255.255.255.252
+ipv6 address 2001:A:A:0702::6/126
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shutdown
+
+crypto isakmp policy 30
+authentication pre-share
+crypto isakmp key labcom address 192.0.0.6
+crypto ipsec transform-set authT ah-sha-hmac
+crypto ipsec transform-set cipherT esp-des
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
+crypto ipsec profile ARipsec
+set transform-set authT cipherT auth_ciphT
+
+int Tunnel 0 
+ip nat outside
+ip unnumbered FastEthernet0/0
+ipv6 unnumbered FastEthernet0/0
+tunnel source 192.0.0.5
+tunnel destination 192.0.0.6
+tunnel mode gre ip 
+tunnel protection ipsec profile ARipsec
+no shutdown
+
+access-list 100 permit ip 10.0.0.0 0.15.255.255 host 192.0.0.6
+access-list 101 permit ip any 200.1.1.64 255.255.255.192
+access-list 102 permit ip 200.1.1.193 255.255.255.192 host 192.0.0.6
+access-list 103 permit ip any 200.1.0.0 0.0.0.127
+
+route-map Send_Internet permit 10
+match ip address 100
+match ip address 101
+match ip address 102
+match ip address 103
+set interface Tunnel 0
+
+ipv6 access-list L101
+sequence 20 permit ipv6 2001:A:A::/52 2001:A:A:4700::/64
+
+route-map Send_Internet_V6 permit 10
+match ipv6 address L101
+set interface Tunnel 0
+
+
+int f1/0
+ip policy route-map Send_Internet
+ipv6 policy route-map Send_Internet_V6
+int f0/1
+ip policy route-map Send_Internet
+ipv6 policy route-map Send_Internet_V6
+int f1/1
+ip policy route-map Send_Internet
+ipv6 policy route-map Send_Internet_V6
+
+end
+write
+
+access-list 100 permit ip 10.0.0.0 0.15.255.255 host 192.0.0.6
+access-list 101 permit ip any 200.1.1.193 255.255.255.192
+access-list 102 permit ip 200.1.1.193 255.255.255.192 host 192.0.0.5
+access-list 103 permit ip any 200.1.0.0 0.0.0.127
+
+
+
+access-list 100 permit ip 10.0.0.0 0.15.255.255 host 192.0.0.6
+access-list 101 permit ip 10.0.0.0 0.15.255.255 200.1.1.193 255.255.255.192
+access-list 101 permit ip 200.1.0.0 255.255.255.128 200.1.1.192 255.255.255.192
+access-list 102 permit ip 200.1.1.193 255.255.255.192 host 192.0.0.6
+
+
+route-map Send_Internet permit 10
+match ip address 2
+match ip address 100
+match ip address 101
+match ip address 102
+set interface Tunnel 0
+
+int f1/0
+ip policy route-map Send_Internet
+int f1/1
+ip policy route-map Send_Internet
+int f0/1
+ip policy route-map Send_Internet

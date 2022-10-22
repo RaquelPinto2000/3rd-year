@@ -1,0 +1,132 @@
+vlan database
+vlan 5
+vlan 4
+vlan 6
+vlan 100
+vlan 101
+exit
+
+conf t 
+
+ip routing
+ipv6 unicast-routing
+
+router ospf 1
+router-id 7.7.7.7
+no passive-interface default
+passive-interface vlan 1
+passive-interface vlan 4
+no passive-interface vlan 100
+no passive-interface vlan 101
+ipv6 router ospf 1
+router-id 7.7.7.7
+no passive-interface default
+passive-interface vlan 1
+passive-interface vlan 4
+no passive-interface vlan 100
+no passive-interface vlan 101
+
+interface vlan 1
+ipv6 enable
+ip address 10.9.0.24 255.255.255.0
+ipv6 address 2001:A:A:0880::24/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no autostate 
+no shutdown
+
+interface vlan 4
+ipv6 enable
+ip address 10.4.0.5 255.255.255.0
+ipv6 address 2001:A:A:0400::5/64
+ipv6 ospf 1 area 0
+ip ospf 1 area 0
+no autostate 
+no shutdown
+
+interface vlan 5
+ip address 200.1.0.2 255.255.255.128
+ip address 10.5.113.2 255.255.255.0 secondary  
+ip ospf 1 area 0
+ipv6 address 2001:A:A:571::2/64 
+ipv6 enable 
+ipv6 ospf 1 area 0
+no autostate
+no shutdown
+
+interface vlan 100
+ipv6 enable
+ip address 10.9.1.24 255.255.255.128
+ipv6 address 2001:A:A:0900::24/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no autostate 
+no shutdown
+
+interface vlan 101
+ipv6 enable
+ip address 10.9.1.250 255.255.255.128
+ipv6 address 2001:A:A:0920::10/64
+ipv6 ospf 1 area 0
+ip ospf 1 area 0
+no autostate 
+no shutdown
+
+interface range f1/5 - 6
+channel-group 1 mode on
+interface Port-channel1
+switchport trunk encapsulation dot1q
+switchport trunk allowed vlan 1,4,6,101,1002-1005
+
+no shutdown
+
+interface range f1/3 - 4
+channel-group 2 mode on 
+interface Port-channel 2
+switchport trunk encapsulation dot1q
+switchport trunk allowed vlan 1,4,6,100,1002-1005
+no shutdown
+
+interface f1/1
+switchport access vlan 5
+switchport trunk encapsulation dot1q
+switchport trunk allowed vlan 1,4,5,6,100,1002-1005
+switchport mode trunk
+no shutdown 
+
+interface f0/0
+ip address 192.168.0.1 255.255.255.252
+ip ospf 1 area 0
+no shutdown -> para a firewall
+
+end
+write
+
+conf terminal
+
+int Tunnel 0
+ip unnumbered vlan 5
+ipv6 unnumbered vlan 5
+tunnel source 10.5.113.2
+tunnel destination 10.5.113.99
+tunnel mode gre ip
+no shutdown
+
+ip route 10.5.113.99 255.255.255.255 Tunnel 0 10.5.113.1
+ipv6 route 2001:A:A:571::99/128 Tunnel 0 2001:A:A:571::1
+ip route 200.1.0.99 255.255.255.255 Tunnel 0 200.1.0.1
+
+int Tunnel 1
+ip unnumbered vlan 5
+ipv6 unnumbered vlan 5
+tunnel source 10.5.113.2
+tunnel destination 10.5.113.100
+tunnel mode gre ip
+no shutdown
+
+ip route 10.5.113.100 255.255.255.255 Tunnel 1 10.5.113.254
+ipv6 route 2001:A:A:571::100/128 Tunnel 1 2001:A:A:571::FFFE
+ip route 200.1.0.100 255.255.255.255 Tunnel 1 200.1.0.126
+
+end 
+write

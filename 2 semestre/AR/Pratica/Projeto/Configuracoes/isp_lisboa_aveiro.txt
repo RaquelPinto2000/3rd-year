@@ -1,0 +1,86 @@
+configure terminal
+ip routing
+ipv6 unicast-routing
+
+
+ip nat pool MYNATPOOL 200.1.1.65 200.1.1.126 netmask 255.255.255.192
+access-list 2 permit 10.39.0.0 0.0.0.255
+ip nat inside source list 2 pool MYNATPOOL overload
+
+crypto isakmp policy 30
+authentication pre-share
+crypto isakmp key labcom address 192.0.0.1
+crypto ipsec transform-set authT ah-sha-hmac
+crypto ipsec transform-set cipherT esp-des
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
+crypto ipsec profile ARipsec
+set transform-set authT cipherT auth_ciphT
+
+int f0/0
+ip nat outside
+ip address 192.0.0.2 255.255.255.252
+ipv6 address 2100:A:A:A::2/126
+no shutdown
+
+ip route 0.0.0.0 0.0.0.0 192.0.0.1
+ipv6 route ::/0 2100:A:A:A::1
+
+int f0/1
+ip nat inside
+ip address 10.39.0.1 255.255.255.0
+ipv6 address 2001:A:A:2700::1/64
+no shutdown
+
+crypto isakmp policy 30
+authentication pre-share
+crypto isakmp key labcom address 192.0.0.1
+crypto ipsec transform-set authT ah-sha-hmac
+crypto ipsec transform-set cipherT esp-des
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
+crypto ipsec profile ARipsec
+set transform-set authT cipherT auth_ciphT
+
+int Tunnel 0 
+ip nat outside
+ip unnumbered FastEthernet0/0
+ipv6 unnumbered FastEthernet0/0
+tunnel source 192.0.0.2
+tunnel destination 192.0.0.1
+tunnel mode gre ip 
+tunnel protection ipsec profile ARipsec
+no shutdown
+
+access-list 100 permit ip 10.39.0.0 255.255.255.0 host 192.0.0.1
+access-list 101 permit ip any 10.39.0.0 255.255.255.0 
+access-list 102 permit ip any 200.1.0.128 255.255.255.192
+access-list 103 permit ip 200.1.0.128 255.255.255.192 host 192.0.0.1
+access-list 104 permit ip any 200.1.0.0 0.0.0.127 
+
+
+route-map Send_Internet permit 10
+match ip address 100
+match ip address 101
+match ip address 102
+match ip address 103
+match ip address 104
+set interface Tunnel 0
+
+ipv6 access-list L101
+sequence 20 permit ipv6 2001:A:A:2700::/64 2001:A:A::/52
+
+route-map Send_Internet_V6 permit 15
+match ipv6 address L101
+set interface Tunnel 0
+
+int f0/1
+ip policy route-map Send_Internet
+ipv6 policy route-map Send_Internet_V6
+
+end
+write
+
+
+router ospf 1
+default-information originate always
+ipv6 router ospf 1
+default-information originate always

@@ -1,0 +1,163 @@
+configure terminal
+ip routing
+ipv6 unicast-routing
+
+router ospf 1
+router-id 1.1.1.1
+no passive-interface default
+default-information originate always
+
+ipv6 router ospf 1
+router-id 1.1.1.1
+no passive-interface default
+default-information originate always
+
+ip nat Stateful id 2
+backup 10.7.0.33
+peer 10.7.0.34
+mapping-id 10
+ip nat pool MYNATPOOL 200.1.0.128 200.1.0.190 netmask 255.255.255.192
+no ip nat inside source list 1 pool MYNATPOOL overload
+ip nat inside source list 1 pool MYNATPOOL mapping-id 10 overload
+access-list 2 permit 10.0.0.0 0.15.255.255 
+access-list 2 permit 200.1.0.0 0.0.0.127 
+ip nat inside source list 2 pool MYNATPOOL overload
+
+crypto isakmp policy 30
+authentication pre-share
+crypto isakmp key labcom address 192.0.0.2
+crypto ipsec transform-set authT ah-sha-hmac
+crypto ipsec transform-set cipherT esp-des
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
+crypto ipsec profile ARipsec
+set transform-set authT cipherT auth_ciphT
+
+int f0/0
+ipv6 enable
+ip nat outside
+ip address 192.0.0.1 255.255.255.252
+ipv6 address 2100:A:A:A::1/126
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shutdown
+
+ip route 0.0.0.0 0.0.0.0 192.0.0.2
+ipv6 route ::/0 2100:A:A:A::2
+
+int f0/1
+ipv6 enable
+ip nat inside
+ip address 10.7.0.6 255.255.255.252
+ipv6 address 2001:A:A:0701::2/126
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shutdown
+
+int f1/0
+ipv6 enable
+ip nat inside
+ip address 10.7.0.18 255.255.255.252
+ipv6 address 2001:A:A:0704::2/126
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shutdown
+
+int f1/1
+ip nat inside
+ip address 10.7.0.33 255.255.255.252
+ipv6 address 2001:A:A:0702::5/126
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shutdown
+
+
+crypto isakmp policy 30
+authentication pre-share
+crypto isakmp key labcom address 192.0.0.2
+crypto ipsec transform-set authT ah-sha-hmac
+crypto ipsec transform-set cipherT esp-des
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
+crypto ipsec profile ARipsec
+set transform-set authT cipherT auth_ciphT
+
+int Tunnel 0 
+ip nat outside
+ip unnumbered FastEthernet0/0
+ipv6 unnumbered FastEthernet0/0
+tunnel source 192.0.0.1
+tunnel destination 192.0.0.2
+tunnel mode gre ip 
+tunnel protection ipsec profile ARipsec
+no shutdown
+
+access-list 100 permit ip 10.0.0.0 0.15.255.255 host 192.0.0.2
+access-list 101 permit ip any 200.1.1.64 255.255.255.192
+access-list 102 permit ip 200.1.1.64 255.255.255.192 host 192.0.0.2
+access-list 103 permit ip any 200.1.0.0 0.0.0.127
+access-list 103 permit ip any 200.1.0.0 0.0.0.127
+
+route-map Send_Internet permit 10
+match ip address 100
+match ip address 101
+match ip address 102
+match ip address 103
+set interface Tunnel 0
+
+ipv6 access-list L101
+sequence 20 permit ipv6 2001:A:A::/52 2001:A:A:2700::/64
+
+route-map Send_Internet_V6 permit 10
+match ipv6 address L101
+set interface Tunnel 0
+
+
+int f1/0
+ip policy route-map Send_Internet
+ipv6 policy route-map Send_Internet_V6
+int f0/1
+ip policy route-map Send_Internet
+ipv6 policy route-map Send_Internet_V6
+int f1/1
+ip policy route-map Send_Internet
+ipv6 policy route-map Send_Internet_V6
+
+no snmp-server engineID local 123456789A
+no snmp-server user user1 group1 v3 
+no snmp-server user user2 group2 v3
+no snmp-server user user3 group3 v3 auth md5 authpass
+no snmp-server user user4 group4 v3 auth md5 authpass priv des56 encpassword
+no snmp-server group group1 v3 noauth
+no snmp-server group group2 v3 noauth read myview
+no snmp-server group group3 v3 auth
+no snmp-server group group4 v3 priv
+no snmp-server view myview system included 
+no snmp-server community myrouter RO
+
+snmp-server user uDDR gDDR v3 auth md5 authpass priv des56 privpass
+snmp-server group gDDR v3 priv
+snmp-server community private RO
+
+end
+write
+
+separar ips de maquinas e esws/routers -> 10.7.0./vlan101/vlan100
+meter no oldbuilding ... e na antena (R4) ??
+
+
+
+route-map Send_Internet permit 10
+match ip address 100
+match ip address 101
+match ip address 102
+match ip address 103
+set interface Tunnel 0
+
+int f1/0
+ip policy route-map Send_Internet
+ipv6 policy route-map Send_Internet_V6
+int f0/1
+ip policy route-map Send_Internet
+ipv6 policy route-map Send_Internet_V6
+int f1/1
+ip policy route-map Send_Internet
+ipv6 policy route-map Send_Internet_V6

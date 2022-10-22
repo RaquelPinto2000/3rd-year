@@ -1,0 +1,27 @@
+configure terminal
+ip routing
+ipv6 unicast-routing
+
+
+ip nat pool MYNATPOOL 200.1.1.193 200.1.1.254 netmask 255.255.255.192
+access-list 2 permit 10.71.0.0 0.0.0.255
+ip nat inside source list 2 pool MYNATPOOL overload
+
+ip route 0.0.0.0 0.0.0.0 192.0.0.9
+ipv6 route ::/0 2100:A:A:A::9
+
+int f0/0
+ip nat outside
+ip address 192.0.0.10 255.255.255.252
+ipv6 address 2100:A:A:A::A/126
+no shutdown
+
+int f0/1
+ip nat inside
+ip address 10.71.0.254 255.255.255.0
+ipv6 address 2001:A:A:4700::FFFE/64
+no shutdown
+
+
+end
+write

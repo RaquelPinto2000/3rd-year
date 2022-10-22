@@ -1,0 +1,48 @@
+conf t
+
+ip routing
+
+router ospf 20
+router-id 9.9.9.9
+
+interface f0/0
+ip address 192.168.11.11 255.255.255.0
+ip ospf 20 area 0
+no shutdown 
+
+interface f0/1
+ip address 192.168.200.11 255.255.255.0
+ip ospf 20 area 0
+no shutdown 
+
+interface vlan 1
+ip address 192.168.100.11 255.255.252.0
+ip ospf 20 area 0
+no shutdown 
+
+interface fastEthernet 1/14
+switchport mode trunk
+switchport trunk encapsulation dot1q
+no shutdown 
+
+interface fastEthernet 1/15
+switchport mode trunk
+switchport trunk encapsulation dot1q
+no shutdown 
+
+end 
+write
+
+----
+REDISTRIBUICAO (ospf)
+
+conf t
+router ospf 20
+redistribute ospf 1 subnets 
+end
+conf t
+router ospf 1
+default-information originate always 
+
+end
+write

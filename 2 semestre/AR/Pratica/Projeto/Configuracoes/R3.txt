@@ -1,0 +1,98 @@
+
+conf t 
+ip routing 
+ipv6 unicast-routing
+
+crypto isakmp policy 30
+authentication pre-share
+crypto isakmp key labcom address 10.7.0.25
+crypto isakmp key labcom address 10.7.0.29
+crypto ipsec transform-set authT ah-sha-hmac
+crypto ipsec transform-set cipherT esp-des
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
+crypto ipsec profile ARipsec
+set transform-set authT cipherT auth_ciphT
+
+interface f0/0
+ipv6 enable
+route-map routeT0 permit 10
+ip address 10.8.0.2 255.255.255.0
+ipv6 address 2001:A:A:0800::2/64
+no shutdown
+
+interface f0/1
+ipv6 enable
+ip address 10.39.0.100 255.255.255.0
+ipv6 address 2001:A:A:2700::F/126
+no shutdown
+
+interface f1/0
+ip address 10.40.0.100 255.255.255.0
+no shutdown
+
+interface Tunnel 0 
+ip unnumbered FastEthernet0/0 
+tunnel source 10.8.0.2
+tunnel destination 10.7.0.25
+tunnel mode ipsec ipv4 
+tunnel protection ipsec profile ARipsec
+no shutdown
+
+ip route 10.7.0.24 255.255.255.252 10.8.0.1
+ip route 10.8.32.0 255.255.255.0 10.8.0.1
+
+route-map routeT0 permit 10 
+match ip address 100
+set interface Tunnel 0
+
+interface Tunnel 1 
+ip unnumbered FastEthernet0/0 
+tunnel source 10.8.0.2
+tunnel destination 10.7.0.29
+tunnel mode ipsec ipv4 
+tunnel protection ipsec profile ARipsec
+no shutdown
+
+access-list 100 permit ip 10.40.0.0 0.0.0.255 host 10.8.32.254
+access-list 101 permit ip 10.40.0.0 0.0.0.255 host 10.8.32.253
+access-list 102 permit ip 10.40.0.0 0.0.0.255 10.8.32.0 0.0.0.255
+
+route-map routeT1 permit 15
+match ip address 100
+set interface Tunnel 0
+
+route-map routeT0 permit 15
+match ip address 101
+set interface Tunnel 1
+
+route-map routeAll0 permit 10
+match ip address 102
+set interface Tunnel 1
+
+route-map routeAll1 permit 10
+match ip address 102
+set interface Tunnel 1
+
+end 
+write 
+
+
+
+interface Tunnel 1
+ipv6 unnumbered FastEthernet0/0 
+tunnel source 2001:A:A:0800::2
+tunnel destination 2001:A:A:0800::1
+tunnel mode ipsec ipv6
+tunnel protection ipsec profile ARipsec
+no shutdown
+
+interface Tunnel 2
+ip unnumbered FastEthernet0/0 
+tunnel source 10.8.0.2
+tunnel destination 10.7.0.26
+tunnel mode ipsec ipv4 
+tunnel protection ipsec profile ARipsec
+ip ospf 1 area 0
+no shutdown
+
+ipv6 route 2001:A:A:0820::/64 Tunnel 1 2001:A:A:0800::1

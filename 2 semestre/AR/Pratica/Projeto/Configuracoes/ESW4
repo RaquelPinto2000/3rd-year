@@ -1,0 +1,214 @@
+vlan database
+vlan 2 
+vlan 3 
+vlan 4
+vlan 5
+vlan 6
+vlan 101
+exit
+
+conf t
+ip routing
+ipv6 unicast-routing
+
+router ospf 1
+router-id 4.4.4.4
+no passive-interface default
+passive-interface vlan 1
+passive-interface vlan 4
+no passive-interface vlan 101
+
+ipv6 router ospf 1
+router-id 4.4.4.4
+no passive-interface default
+passive-interface vlan 1
+passive-interface vlan 4
+no passive-interface vlan 101
+
+int f0/0 
+ipv6 enable
+ip address 10.7.0.13 255.255.255.252
+ipv6 address 2001:A:A:0703::1/126
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shutdown 
+
+int f0/1 
+ipv6 enable
+ip address 10.7.0.17 255.255.255.252
+ipv6 address 2001:A:A:0704::1/126
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shutdown 
+
+int f1/2 
+no switchport
+ipv6 enable
+ip address 10.7.0.254 255.255.255.252
+ipv6 address 2001:A:A:0700::2/126
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shutdown 
+
+int f1/1 
+no switchport
+ip address 192.168.11.1 255.255.255.0
+ip ospf 1 area 0
+no shutdown
+
+int f1/5
+switchport
+no ip address
+switchport mode trunk
+switchport trunk encapsulation dot1q
+switchport trunk allowed vlan 1,4,6,101,1002-1005
+no shutdown
+
+int f1/6
+switchport 
+no ip address 
+switchport mode trunk
+switchport trunk encapsulation dot1q
+switchport trunk allowed vlan 1,4,6,101,1002-1005
+no shutdown
+
+
+int f1/3
+switchport 
+no ip address
+switchport mode trunk
+switchport trunk encapsulation dot1q
+switchport trunk allowed vlan 1,4,6,101,1002-1005
+no shutdown
+
+int f1/4
+switchport 
+no ip address
+switchport mode trunk
+switchport trunk encapsulation dot1q
+switchport trunk allowed vlan 1,4,6,101,1002-1005
+no shutdown
+
+
+interface vlan 1
+ipv6 enable
+ip address 10.9.0.253 255.255.255.0
+ipv6 address 2001:A:A:0880::FFF0/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no autostate 
+no shutdown
+
+interface vlan 2
+ipv6 enable
+ip address 10.0.0.253 255.255.255.0
+ipv6 address 2001:A:A:0000::FFF0/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no autostate 
+no shutdown
+
+interface vlan 3
+ipv6 enable
+ip address 10.0.16.253 255.255.255.0
+ipv6 address 2001:A:A:0010::FFF0/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no autostate 
+no shutdown
+
+interface vlan 4
+ipv6 enable
+ip address 10.4.0.253 255.255.255.0
+ipv6 address 2001:A:A:0400::FFF0/64
+ipv6 ospf 1 area 0
+ip ospf 1 area 0
+no autostate 
+no shutdown
+
+interface vlan 5
+ipv6 enable 
+ip address 200.1.0.126 255.255.255.128
+ip address 10.5.113.254 255.255.255.0 secondary
+ipv6 address 2001:A:A:0571::FFFE/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no autostate 
+no shutdown
+
+interface vlan 6
+ip policy route-map routeT0
+ipv6 enable 
+ip address 10.8.32.253 255.255.255.0
+ipv6 address 2001:A:A:0820::FFF0/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no autostate 
+no shutdown 
+
+interface vlan 101
+ipv6 enable
+ip address 10.9.1.129 255.255.255.128
+ipv6 address 2001:A:A:0920::1/64
+ipv6 ospf 1 area 0
+ip ospf 1 area 0
+no autostate 
+no shutdown
+
+interface range f1/5 - 6
+channel-group 2 mode on
+switchport mode trunk
+switchport trunk encapsulation dot1q
+switchport trunk allowed vlan 1,4,5,101,1002-1005
+interface Port-channel 2
+switchport mode trunk 
+switchport mode trunk
+switchport trunk encapsulation dot1q
+switchport trunk allowed vlan 1,4,5,101,1002-1005
+no shutdown
+
+interface f1/15
+ip policy route-map routeT1
+no switchport
+ip address 10.7.0.29 255.255.255.252
+ip ospf 1 area 0
+no shutdown
+
+crypto isakmp policy 30
+authentication pre-share
+crypto isakmp key labcom address 10.8.0.2
+crypto ipsec transform-set authT ah-sha-hmac
+crypto ipsec transform-set cipherT esp-des
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
+crypto ipsec profile ARipsec
+set transform-set authT cipherT auth_ciphT
+
+interface Tunnel 1 
+ip unnumbered FastEthernet1/15
+tunnel source 10.7.0.29
+tunnel destination 10.8.0.2
+tunnel mode ipsec ipv4 
+tunnel protection ipsec profile ARipsec
+no shutdown
+
+access-list 100 permit ip 10.8.32.0 0.0.0.255 10.40.0.0 0.0.0.255 
+
+route-map routeT1 permit 10
+match ip address 100
+set interface Tunnel 1
+
+
+
+
+
+ip route 10.40.0.0 255.255.255.0 Tunnel 1 10.7.0.30
+ip route 10.8.0.0 255.255.255.252 10.7.0.30
+ip route 10.40.0.0 255.255.255.0 10.7.0.30
+
+
+
+end
+write 
+
+interface Tunnel 1 
+ip unnumbered FastEthernet1/15
