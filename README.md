@@ -32,9 +32,10 @@
     - Use C#, C++ and SQL
 
 #### IHC: Developed with [Lúcia Sousa](https://github.com/luciasousa), [Rodrigo Martins](https://github.com/rodrigo740) in 2021
-* [Project](https://github.com/RaquelPinto2000/4ano/tree/main/2%20semestre/EGS/Pratica/Projeto)- Bee in Control
+* [Project](https://github.com/RaquelPinto2000/3ano/tree/main/2%20semestre/IHC/Pratica/projeto/Bee-in-Control/BeeInControlAPP)- Bee in Control
     - Use Android Studio and Java
 
 #### PEI: Developed with [Rodrigo Martins](https://github.com/rodrigo740), [Lúcia Sousa](https://github.com/luciasousa), [Rafael Dias](https://github.com/rafaeldsd) and [Manuel Couto](https://github.com/coutooo) in 2021
-* [Project PEI](https://github.com/RaquelPinto2000/4ano/tree/main/2%20semestre/SD/Pratica/Assig1-project) - V2X: Medical Emergency Service 2.0
+* [Project PEI](https://github.com/RaquelPinto2000/3ano/tree/main/2%20semestre/PEI) - V2X: Medical Emergency Service 2.0
     - [Project Micro-site](https://github.com/RaquelPinto2000/3ano/tree/main/2%20semestre/PEI/rodrigo740.github.io)
+    - Use React, MySQL, Flask, OBU (OnBoard Unit), RSU (Roadside Unit), IP Camera GPS Module and CAMs and DENMs (for communications)
