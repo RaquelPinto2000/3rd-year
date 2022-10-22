@@ -7,28 +7,25 @@
     - Use HTML, JavaScript, CSS, MYSQL, Flask, Visual Paradigm
 
 #### FR: Developed with [Lúcia Sousa](https://github.com/luciasousa) in 2020
-* [Project]() - : Definition of the IPv4 and IPv6 addressing scheme of a business network. Configure the company communication network
+* [Project](https://github.com/RaquelPinto2000/3ano/tree/main/1%20semestre/FR/pratica/mini-projeto/Projeto_FR) - : Definition of the IPv4 and IPv6 addressing scheme of a business network. Configure the company communication network
     - Use GNS3
 
 #### IIA: Developed with [Lúcia Sousa](https://github.com/luciasousa) and [Rodrigo Martins](https://github.com/rodrigo740) in 2020
-* [Project](https://github.com/RaquelPinto2000/4ano/tree/main/1%20semestre/IC/Pratica/projeto1) - Manipulating text, audio and image/video 
+* [Project](https://github.com/RaquelPinto2000/3ano/tree/main/1%20semestre/IIA/pratica/projeto/trabalho-de-grupo-sokoban-93264_93086_92948_p5) -  Desenvolvimento de um Agente autonomo para o jogo Sokoban
     - Use Python
 
 
 #### SO: Developed with [Lúcia Sousa](https://github.com/luciasousa), [Rodrigo Martins](https://github.com/rodrigo740), [Maria Strecht](https://github.com/MariaStrecht), [Luisa Amaral](https://github.com/LuisaTheAmaral) and [Hugo Leal](https://github.com/hugolardosa) in 2020
-* [Project]() - 
-    - Use C
+* [Project](https://github.com/RaquelPinto2000/3ano/tree/main/1%20semestre/SO/pratica/tema2) - Sofs20
+    - Use C, Shell and CMake
 
 
 ## Projects of the 2nd semester
 
 #### AR: Developed with [Alexandre Oliveira](https://github.com/AlexOliZ) in 2021
-* [Project ESP 32](https://github.com/RaquelPinto2000/4ano/tree/main/2%20semestre/ASE/ESP32/ESP32-project) - I2C, PWM, SPI, DAC, ADC, UART, OTA
-    - Use Temperature Sensor, Potentiometer, Leds, Memory, Resistors (10k Ohms) and C Language
-* [Project Raspberry PI Model 4](https://github.com/RaquelPinto2000/4ano/tree/main/2%20semestre/ASE/Raspberry_Pi4B/Projeto_Raspberry) - STOP Button for a Bus
-    - Use Button, Buzzer, LCD Display, Led, Temperature Sensor, Potentiometer, Resistors (10k Ohms) and Python Language
-* [Project Jetson Nano](https://github.com/RaquelPinto2000/4ano/tree/main/2%20semestre/ASE/JetsonNano/App_JetsonNano_Project) - Compare CPU and GPU 
-    - Use CUDA
+* [Project](https://github.com/RaquelPinto2000/3ano/tree/main/1%20semestre/FR/pratica/mini-projeto/Projeto_FR) - : Definition of the IPv4 and IPv6 addressing scheme of a business network. Configure the company communication network
+    - Use GNS3
+
 
 #### BD: Developed with [Alexandre Oliveira](https://github.com/AlexOliZ) in 2021
 * [Project](https://github.com/RaquelPinto2000/Project_CR) - Accelerating palindrome checking and counting with a Hardware Coprocessor 
