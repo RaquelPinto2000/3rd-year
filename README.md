@@ -11,24 +11,24 @@
     - Use GNS3
 
 #### IIA: Developed with [Lúcia Sousa](https://github.com/luciasousa) and [Rodrigo Martins](https://github.com/rodrigo740) in 2020
-* [Project](https://github.com/RaquelPinto2000/3ano/tree/main/1%20semestre/IIA/pratica/projeto/trabalho-de-grupo-sokoban-93264_93086_92948_p5) -  Desenvolvimento de um Agente autonomo para o jogo Sokoban
+* [Project](https://github.com/RaquelPinto2000/3ano/tree/main/1%20semestre/IIA/pratica/projeto/trabalho-de-grupo-sokoban-93264_93086_92948_p5) -  Development of an Autonomous Agent for the game Sokoban
     - Use Python
 
 
 #### SO: Developed with [Lúcia Sousa](https://github.com/luciasousa), [Rodrigo Martins](https://github.com/rodrigo740), [Maria Strecht](https://github.com/MariaStrecht), [Luisa Amaral](https://github.com/LuisaTheAmaral) and [Hugo Leal](https://github.com/hugolardosa) in 2020
-* [Project](https://github.com/RaquelPinto2000/3ano/tree/main/1%20semestre/SO/pratica/tema2) - Sofs20
+* [Project](https://github.com/RaquelPinto2000/3ano/tree/main/1%20semestre/SO/pratica/tema2) - SOFS20 Critical components of an ext2-based filesystem
     - Use C, Shell and CMake
 
 
 ## Projects of the 2nd semester
 
 #### AR: Developed with [Alexandre Oliveira](https://github.com/AlexOliZ) in 2021
-* [Project](https://github.com/RaquelPinto2000/3ano/tree/main/2%20semestre/AR/Pratica/Projeto) - Executar o desenho técnico, configurar e testar uma rede de telecomunicações de uma empresa de média/grande dimensão
+* [Project](https://github.com/RaquelPinto2000/3ano/tree/main/2%20semestre/AR/Pratica/Projeto) - Perform technical design, configure and test a telecommunications network for a medium/large enterprise
     - Use GNS3
 
 
 #### BD: Developed with [Alexandre Oliveira](https://github.com/AlexOliZ) in 2021
-* [Project](https://github.com/RaquelPinto2000/3ano/tree/main/2%20semestre/BD/Pratica/Projeto) - Fórmula 1
+* [Project](https://github.com/RaquelPinto2000/3ano/tree/main/2%20semestre/BD/Pratica/Projeto) - Formula 1
     - Use C#, C++ and SQL
 
 #### IHC: Developed with [Lúcia Sousa](https://github.com/luciasousa), [Rodrigo Martins](https://github.com/rodrigo740) in 2021
